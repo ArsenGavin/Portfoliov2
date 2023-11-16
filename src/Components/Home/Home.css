@@ -1,0 +1,155 @@
+.home {
+    display: flex;
+    height: 100vh;
+}
+
+.textBackground {
+    position: fixed;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    font-weight: 900;
+    color: black;    
+    animation: textbackgroundfadeout 11s ease-in-out;
+    -moz-animation: textbackgroundfadeout 11s ease-in-out; /* Firefox */
+    -webkit-animation: textbackgroundfadeout 11s ease-in-out; /* Safari et Chrome */
+    -o-animation: textbackgroundfadeout 11s ease-in-out; /* Opera */
+}
+
+
+@keyframes textbackgroundfadeout {
+    0% {
+        opacity: 1;
+      }
+    10% {
+        opacity: 0.9;
+      }
+    20% {
+        opacity: 0.8;
+      }
+    30% {
+        opacity: 0.7;
+      } 
+    40% {
+        opacity: 0.6;
+      }
+    50% {
+        opacity: 0.5;
+      }
+    60% {
+          opacity: 0.4;
+        }
+    70% {
+          opacity: 0.3;
+        }
+    80% {
+        opacity: 0.2;
+      }
+    90% {
+          opacity: 0.1;
+        }
+    100% {
+        opacity: 0;
+      }
+  }
+  @-moz-keyframes textbackgroundfadeout { /* sur Firefox */
+    0% {
+        opacity: 1;
+      }
+    10% {
+        opacity: 0.9;
+      }
+    20% {
+        opacity: 0.8;
+      }
+    30% {
+        opacity: 0.7;
+      } 
+    40% {
+        opacity: 0.6;
+      }
+    50% {
+        opacity: 0.5;
+      }
+    60% {
+          opacity: 0.4;
+        }
+    70% {
+          opacity: 0.3;
+        }
+    80% {
+        opacity: 0.2;
+      }
+    90% {
+          opacity: 0.1;
+        }
+    100% {
+        opacity: 0;
+      }
+  }
+  @-webkit-keyframes textbackgroundfadeout { /* sur Safari et Chrome */
+    0% {
+        opacity: 1;
+      }
+      
+      25% {
+        opacity: 1;
+      }
+      
+      50% {
+        opacity: 1;
+      }
+      
+      60% {
+          opacity: 0.8;
+        }
+        
+      70% {
+          opacity: 0.6;
+        }
+      80% {
+        opacity: 0.4;
+      }
+      80% {
+          opacity: 0.2;
+        }
+      100% {
+        opacity: 0;
+      }
+  }
+  @-o-keyframes cardftextbackgroundfadeoutadein { /* sur Opera */
+    0% {
+        opacity: 1;
+      }
+    10% {
+        opacity: 0.9;
+      }
+    20% {
+        opacity: 0.8;
+      }
+    30% {
+        opacity: 0.7;
+      } 
+    40% {
+        opacity: 0.6;
+      }
+    50% {
+        opacity: 0.5;
+      }
+    60% {
+          opacity: 0.4;
+        }
+    70% {
+          opacity: 0.3;
+        }
+    80% {
+        opacity: 0.2;
+      }
+    90% {
+          opacity: 0.1;
+        }
+    100% {
+        opacity: 0;
+      }
+  }

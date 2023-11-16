@@ -1,0 +1,176 @@
+.themesBox1 {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.themesBox2 {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  width: min-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.btnThemes {
+  width: 6vw;
+  max-width: 100px;
+  text-decoration: none;
+  padding: 6px;
+  font-family: arial;
+  font-size: 1em;
+  color: rgb(236 228 222);
+  background-color: #000000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: 2px groove rgb(236 228 222);
+  box-shadow: 3px 3px 12px #444444;
+  -webkit-box-shadow: 3px 3px 12px #444444;
+  -moz-box-shadow: 3px 3px 12px #444444;
+  user-select: none;
+  }
+  
+  
+.btnThemes:hover {
+  padding: 6px;
+  background-color: #2d2d2d;
+  box-shadow: 3px 3px 12px #777777;
+  -webkit-box-shadow: 3px 3px 12px #777777;
+  -moz-box-shadow: 3px 3px 12px #777777;
+}
+
+.btnActif1, .btnThemesAtl1:hover {
+  border-color: #FE4760;
+}
+.btnActif2, .btnThemesAtl2:hover {
+  border-color: #ffc107;
+}
+.btnActif3, .btnThemesAtl3:hover {
+  border-color: #ffff62;
+}
+.btnActif4, .btnThemesAtl4:hover {
+  border-color: #0F0;
+}
+.btnActif5, .btnThemesAtl5:hover {
+  border-color: #007bff;
+}
+.btnActif6, .btnThemesAtl6:hover {
+  border-color: #6f42c1;
+}
+.btnActif7, .btnThemesAtl7:hover {
+  border-color: white;
+  animation: gradiantColor 5s infinite;
+}
+
+  @keyframes gradiantColor {
+    from,
+      to {
+      border-color: hsl(120, 100%, 50%);
+    }
+    20% {
+      border-color: hsl(211, 100%, 50%);
+    }
+    40% {
+      border-color: hsl(352, 99%, 64%);
+    }
+    60% {
+      border-color: hsl(45, 100%, 51%);
+    }
+    80% {
+      border-color: hsl(261, 51%, 51%);
+    }
+    100% {
+      border-color: hsl(0, 0%, 100%);
+    }
+  }
+
+  @-moz-keyframes gradiantColor { /* sur Firefox */
+    from,
+      to {
+      border-color: hsl(120, 100%, 50%);
+    }
+    20% {
+      border-color: hsl(211, 100%, 50%);
+    }
+    40% {
+      border-color: hsl(352, 99%, 64%);
+    }
+    60% {
+      border-color: hsl(45, 100%, 51%);
+    }
+    80% {
+      border-color: hsl(261, 51%, 51%);
+    }
+    100% {
+      border-color: hsl(0, 0%, 100%);
+    }
+  }
+
+  @-webkit-keyframes gradiantColor { /* sur Safari et Chrome */
+    from,
+    to {
+      border-color: hsl(120, 100%, 50%);
+    }
+    20% {
+      border-color: hsl(211, 100%, 50%);
+    }
+    40% {
+      border-color: hsl(352, 99%, 64%);
+    }
+    60% {
+      border-color: hsl(45, 100%, 51%);
+    }
+    80% {
+      border-color: hsl(261, 51%, 51%);
+    }
+    100% {
+      border-color: hsl(0, 0%, 100%);
+    }
+  }
+
+  @-o-keyframes gradiantColor { /* sur Opera */
+    from,
+    to {
+      border-color: hsl(120, 100%, 50%);
+    }
+    20% {
+      border-color: hsl(211, 100%, 50%);
+    }
+    40% {
+      border-color: hsl(352, 99%, 64%);
+    }
+    60% {
+      border-color: hsl(45, 100%, 51%);
+    }
+    80% {
+      border-color: hsl(261, 51%, 51%);
+    }
+    100% {
+      border-color: hsl(0, 0%, 100%);
+    }
+  }
+
+/* .btnActif8, .btnThemesAtl8:hover {
+  border-color: black;
+  color: black;
+  background: white;
+  } */
+
+
+  @media only screen and (max-width : 1175px) {
+    .themesBox2 {
+      position: fixed;
+      top: 8%;
+      right: 2%;
+      width: min-content;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+  }

@@ -1,0 +1,282 @@
+.presensationCard {
+    margin-top: 15%;
+    margin-left: 4%;
+    width: fit-content;
+}
+
+.presentationCardContainer {
+    position: relative;
+    background: rgb(236 228 222);
+    width: 25vw;
+    max-width: 320px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2%;
+    border: 4px solid black;
+    user-select: none;
+    animation: cardfadein 15s;
+    -moz-animation: cardfadein 15s; /* Firefox */
+    -webkit-animation: cardfadein 15s; /* Safari et Chrome */
+    -o-animation: cardfadein 15s; /* Opera */
+}
+
+@keyframes cardfadein {
+  0% {
+    opacity: 0;
+  }
+  
+  25% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes cardfadein { /* sur Firefox */
+  0% {
+    opacity: 0;
+  }
+  
+  25% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cardfadein { /* sur Safari et Chrome */
+  0% {
+    opacity: 0;
+  }
+  
+  25% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes cardfadein { /* sur Opera */
+  0% {
+    opacity: 0;
+  }
+  
+  25% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.titleCard {
+    font-size: 1.5em;
+    color: black;
+    user-select: none;
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white; */
+}
+.titleCard::after {
+    content:"_";
+    animation: fadein 1s infinite;
+    -moz-animation: fadein 1s infinite; /* Firefox */
+    -webkit-animation: fadein 1s infinite; /* Safari et Chrome */
+    -o-animation: fadein 1s infinite; /* Opera */
+}
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadein { /* sur Firefox */
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadein { /* sur Safari et Chrome */
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.iconReseauBox{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: fit-content;
+    margin: 4% auto;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.iconAlt {
+    width: 20px;
+    height: 20px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.infoCard{
+    /* display: flex; */
+}
+
+.textInfoCard {
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+.icon:hover , .iconAlt:hover {
+    color: white;
+    animation: gradiantColor1 5s infinite;
+}
+
+
+@keyframes gradiantColor1 {
+    from,
+      to {
+      color: hsl(120, 100%, 50%);
+    }
+    20% {
+      color: hsl(211, 100%, 50%);
+    }
+    40% {
+      color: hsl(352, 99%, 64%);
+    }
+    60% {
+      color: hsl(45, 100%, 51%);
+    }
+    80% {
+      color: hsl(261, 51%, 51%);
+    }
+    100% {
+      color: hsl(0, 0%, 100%);
+    }
+  }
+
+  @-moz-keyframes gradiantColor1 { /* sur Firefox */
+    from,
+      to {
+      color: hsl(120, 100%, 50%);
+    }
+    20% {
+      color: hsl(211, 100%, 50%);
+    }
+    40% {
+      color: hsl(352, 99%, 64%);
+    }
+    60% {
+      color: hsl(45, 100%, 51%);
+    }
+    80% {
+      color: hsl(261, 51%, 51%);
+    }
+    100% {
+      color: hsl(0, 0%, 100%);
+    }
+  }
+
+  @-webkit-keyframes gradiantColor1 { /* sur Safari et Chrome */
+    from,
+      to {
+      color: hsl(120, 100%, 50%);
+    }
+    20% {
+      color: hsl(211, 100%, 50%);
+    }
+    40% {
+      color: hsl(352, 99%, 64%);
+    }
+    60% {
+      color: hsl(45, 100%, 51%);
+    }
+    80% {
+      color: hsl(261, 51%, 51%);
+    }
+    100% {
+      color: hsl(0, 0%, 100%);
+    }
+  }
+
+  @-o-keyframes gradiantColor1 { /* sur Opera */
+    from,
+      to {
+      color: hsl(120, 100%, 50%);
+    }
+    20% {
+      color: hsl(211, 100%, 50%);
+    }
+    40% {
+      color: hsl(352, 99%, 64%);
+    }
+    60% {
+      color: hsl(45, 100%, 51%);
+    }
+    80% {
+      color: hsl(261, 51%, 51%);
+    }
+    100% {
+      color: hsl(0, 0%, 100%);
+    }
+  }

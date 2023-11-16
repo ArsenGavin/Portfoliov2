@@ -1,0 +1,72 @@
+.cvContainer {
+    width: 65vw;
+    height: fit-content;
+    background: rgb(236 228 222);
+    position: fixed;
+    top: 50%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+    border-radius: 20px;
+    border: 4px;
+    overflow: auto;
+}
+
+.cvContainer div.cvBox{
+    display: flex;
+    color: black;
+}
+
+.cvContainer div.cvBox a{
+    color: black!important;
+    /* position: relative; */
+}
+
+
+
+.cvContainer div.cvBox a:hover {
+    background-image: "../../../doc/Thomas Birmingham CV 2023.pdf";
+    /* display: block; */
+    background-size: cover;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+
+.cvContainer div p {
+    font-size: 14px;
+}
+
+.cvBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    margin-top : 2%;
+}
+
+.cvSection {
+    width: 48%;
+    margin-top:2%;
+}
+
+.cvSection div{
+    margin : 2% 0;
+}
+
+.cvSection div ul li{
+    font-size: 14px;
+    margin: 1% 0;
+}
+
+.cvSection div h3, .cvSection div h4 {
+    margin : 2% 0;
+}
+
+.cvSection div p{
+    font-size: 13px;
+    margin: 1% 0;
+    letter-spacing: 0.5px;
+
+}

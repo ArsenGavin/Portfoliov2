@@ -1,0 +1,60 @@
+.toDoList span {
+    color: rgb(161, 160, 160);
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 600;
+  }
+  
+  .taskCheckCount {
+    text-align: right;
+    display: block;
+    padding: 0 2% 5%;
+    font-weight: 600;
+  }
+  
+  .toDoList .listTask {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: transparent;
+    max-height: 45vh;
+    overflow: auto;
+    padding: 20px 0 20px 0;
+  }
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #575656; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #575656; 
+}
+
+.listTask .task {
+  background: #ffffffc7;
+  padding: 4px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  border-radius: 50px;
+}
+input[type='checkbox'] {
+  padding: 5px;
+  cursor: pointer;
+}

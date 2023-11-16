@@ -1,0 +1,156 @@
+{
+    "BubbleTab": [
+      {
+        "id": "1",
+        "text": "Copieur !",
+        "msgTime": "6",
+        "status": false
+      },
+      {
+        "id": "2",
+        "text": "Curriculum vitæ ! ",
+        "citation": "« Labor omnia vincit improbus »",
+        "msgTime": "6",
+        "status": false
+      },
+      {
+        "id": "3",
+        "text": "Mes différents projets sont regroupés ici.",
+        "msgTime": "6",
+        "status": false
+      },
+      {
+        "id": "4",
+        "text": "Certain de mes skills.. ",
+        "citation": "Je ne pouvais pas tout mettre, je n'avais plus de place 😅 .",
+        "msgTime": "6",
+        "status": false
+      },
+      {
+        "id": "5",
+        "text": "C'est ma galerie d'art perso !",
+        "msgTime": "6",
+        "status": false
+      }
+    ],
+    "ColorTabMatrixWall": [
+      {
+        "color": "#FE4760",
+        "text": "Rouge"
+      },
+      {
+        "color": "#ffc107",
+        "text": "Orange"
+      },
+      {
+        "color": "#ffff62",
+        "text": "Jaune"
+      },
+      {
+        "color": "#0F0",
+        "text": "Vert"
+      },
+      {
+        "color": "#007bff",
+        "text": "Bleu"
+      },
+      {
+        "color": "#6f42c1",
+        "text": "Violet"
+      },
+      {
+        "color": [
+          "#FE4760",
+          "#ffc107",
+          "#ffff62",
+          "#0F0",
+          "#007bff",
+          "#6f42c1",
+          "white"
+        ],
+        "text": "All"
+      }
+    ],
+    "PoliceTabMatrixWall": [
+      {
+        "str": "01",
+        "text": "Binaire"
+      },
+      {
+        "str": "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン",
+        "text": "Katakana"
+      },
+      {
+        "str": "ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ",
+        "text": "Hangul"
+      },
+      {
+        "str": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "text": "Latin"
+      },
+      {
+        "str": "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
+        "text": "Grec"
+      }
+    ],
+    "CurriculumVitae":[
+      {
+        "paragraph": "Diplômé d'Epitech en tant qu'architecte logiciel et développeur d'applications, je souhaite apporter mes compétences à votre entreprise.",
+        "paragraph2": "Polyvalence, motivation et curiosité sont les qualités qui me définissent au travail.",
+        "cv": "Télécharger le CV",
+        "experience": [
+          {
+            "title" : "EXPÉRIENCE PROFESSIONNELLE"
+          },
+          {
+            "title": "DÉVELOPPEUR FRONT-END JUNIOR INTÉGRATION ET CONCEPTION FRONT. R&D",
+            "companyDate": "Heaven, Wami Concept | 2020-2022",
+            "responsibilities": [
+              "Intégration HTML CSS",
+              "Conception de solutions en JAVASCRIPT/JQUERY et en REACT JS",
+              "R&D : machine learning avec Tensorflow (classification)",
+              "R&D : avec AR.JS (réalité augmentée en Webapp)"
+            ],
+            "description": "Au début de mon contrat au sein de l'entreprise, j'ai été amené à faire de l'intégration classique hmtl css, puis à concevoir des solutions en javascript/ Jquery et en React Js (techno sur laquelle j'évolue au quotidien). Puis j'ai effectué de la R&D afin d'agrandir notre catalogue de vente, notamment sur des technos comme le machine learning avec Tensorflow qui m'a permis de faire de la reconnaissance d'objets (classification), ou avec AR.js une lib qui permet de faire un rendu de réalité augmentée en Webapp."
+          },
+          {
+            "title": "DÉVELOPPEUR FRONT-END JUNIOR",
+            "companyDate": "Syllès informatique | 2019",
+            "responsibilities": [
+              "Développement du site web de l'entreprise (https://sylles.fr/)",
+              "Création d'un outil de calcul pour permettre un devis en ligne",
+              "Approfondissement des compétences JOOMLA, YOOTHEME, librairie JOOMLA ULKIT, HTML 5, CSS 3, JAVASCRIPT, JQUERY, PHOTOSHOP, SHOTCUT"
+            ]
+          }
+        ],
+        "education": [
+          {
+            "title" : "FORMATION"
+          },
+          {
+            "title": "EPITECH",
+            "degreeDate": "Master (bac +5) Msc Pro Alternance | 2020-2022",
+            "description": "Architecte logiciel, développeur d'application"
+          },
+          {
+            "title": "OPENCLASSROOMS",
+            "degreeDate": "Bachelor (bac +3) | 2018-2019",
+            "description": "Développeur d'application Front- End"
+          },
+          {
+            "title": "ECOLE 42",
+            "date": "2017 - 2018",
+            "description": "Formation langage C"
+          },
+          {
+            "title": "ÉCOLE NATIONALE SUPÉRIEURE D'ART DE BOURGES",
+            "date": "2013-2015",
+            "description": "Apprentissage des arts (dessin, peinture, sculpture, histoire de l'art)"
+          }
+        ]
+      }
+    ]
+  }
+    
+  
+  

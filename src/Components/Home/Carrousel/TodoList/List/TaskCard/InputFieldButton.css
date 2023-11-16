@@ -1,0 +1,43 @@
+
+
+.InputFieldBox {
+    width: 100%;
+    padding-left: 1rem;
+    background: #000000;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .InputFieldBox input {
+    background: transparent;
+    padding: 10px;
+    color: rgb(161, 160, 160);
+    font-size: 14px;
+    border-radius: 20px;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  .InputFieldBox input::placeholder {
+    color: rgb(161, 160, 160);
+  }
+  
+  .InputFieldBox button {
+    background: rgba(0, 0, 0, 0.552);
+    color: #fff;
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0% 50% 50% 0%;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-left: 1px solid white;
+  }
+  
+  .InputFieldBox button:hover {
+    background: #595858d3;
+  }

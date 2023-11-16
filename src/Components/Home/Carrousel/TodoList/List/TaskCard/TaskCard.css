@@ -1,0 +1,83 @@
+
+.taskText {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .taskTextChecked {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: Grey;
+    font-size: 14px;
+  }
+  
+  .boxIcon {
+    display: flex;
+    justify-content: right;
+  }
+  
+  .deleteIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 27px !important;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    display: block;
+    background-color: #00000042;
+  }
+  .deleteIcon:hover {
+    background: rgba(255, 0, 0, 0.651);
+    transition: 0.3s;
+  }
+  
+  .validateIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 27px !important;
+    color: rgb(3, 212, 45)!important;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    display: block;
+    background-color: #00000042;
+  }
+  
+  .validateIconChecked{
+    width: 40px;
+    height: 40px;
+    font-size: 27px !important;
+    color: rgb(3, 212, 45)!important;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    display: block;
+    background: rgba(3, 212, 45, 0.804);
+  }
+  
+  .validateIconChecked:hover {
+    background: rgba(3, 212, 45, 0.369);
+    transition: 0.3s;
+  }
+  
+  .validateIcon:hover {
+    background: rgba(3, 212, 45, 0.369);
+    transition: 0.3s;
+  }
+  
+  .isChecked {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
