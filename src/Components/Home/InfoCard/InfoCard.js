@@ -29,7 +29,6 @@ function PresentationCard({
   bubbleChatTextTab,
   cleanStatusBubble,
   actifToggleStatusBubble,
-  currentLanguage,
 }) {
   const copyText = (textToCopy) => {
     // Créez une instance de ClipboardItem

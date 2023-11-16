@@ -65,7 +65,6 @@ function Home({ currentLanguage, toggleLanguage }) {
         bubbleChatTextTab={bubbleChatTextTab}
         cleanStatusBubble={cleanStatusBubble}
         actifToggleStatusBubble={actifToggleStatusBubble}
-        currentLanguage={currentLanguage}
       />
       <Languages
         currentLanguage={currentLanguage}
