@@ -1,10 +1,14 @@
 import './Dashboard.css';
+import DataFr from '../../../Utils/Data-Fr.json';
+import DataEn from '../../../Utils/Data-En.json';
 import { IoMdHome } from 'react-icons/io';
+
 function Dashboard({
   actifToggleStatusBubble,
   cleanStatusBubble,
   handleCurrentComponent,
   currentComponent,
+  currentLanguage,
 }) {
   const handleClick = (currentComponent) => {
     cleanStatusBubble();
@@ -32,7 +36,7 @@ function Dashboard({
             handleClick('3');
           }}
         >
-          Projets
+          {currentLanguage === 'FR' ? DataFr.DashBoard[0] : DataEn.DashBoard[0]}
         </li>
         <li
           className={`liNav ${currentComponent === '4' ? 'actifNav' : ''}`}
@@ -40,7 +44,7 @@ function Dashboard({
             handleClick('4');
           }}
         >
-          Compétences
+          {currentLanguage === 'FR' ? DataFr.DashBoard[1] : DataEn.DashBoard[1]}
         </li>
         <li
           className={`liNav ${currentComponent === '5' ? 'actifNav' : ''}`}
@@ -48,7 +52,7 @@ function Dashboard({
             handleClick('5');
           }}
         >
-          MyJourney
+          {currentLanguage === 'FR' ? DataFr.DashBoard[2] : DataEn.DashBoard[2]}
         </li>
       </ul>
     </div>

@@ -10,7 +10,7 @@
 .themesBox2 {
   position: fixed;
   top: 2%;
-  right: 2%;
+  right: 100px;
   width: min-content;
   display: flex;
   justify-content: space-between;

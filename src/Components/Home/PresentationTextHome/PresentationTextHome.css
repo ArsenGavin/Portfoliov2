@@ -16,6 +16,11 @@
     -o-animation: typeAnimation 3s; /* Opera */
 }
 
+
+
+.actifTypeAnimation {
+  display: none;
+}
 @keyframes typeAnimation {
     0% {
       opacity: 0;

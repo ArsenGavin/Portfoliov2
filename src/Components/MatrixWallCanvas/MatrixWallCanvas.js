@@ -88,6 +88,7 @@ function MatrixWallCanvas(props) {
         externalCleanupCanvasAlt={externalCleanupCanvasAlt}
         policeCanvas={policeCanvas}
         colorPoliceCanvas={colorPoliceCanvas}
+        currentLanguage={props.currentLanguage}
       />
     </>
   );

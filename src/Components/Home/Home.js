@@ -1,14 +1,18 @@
 import './Home.css';
 import InfoCard from './InfoCard/InfoCard';
 import { useState, useCallback, useEffect } from 'react';
-import Data from '../../Utils/Data-Fr.json';
+import DataFr from '../../Utils/Data-Fr.json';
+import DataEn from '../../Utils/Data-En.json';
 import PresentationTextHome from './PresentationTextHome/PresentationTextHome';
 import Dashboard from './Dashboard/Dashboard';
+import Languages from './Languages/Languages';
 import CurriculumVitae from './CurriculumVitae/CurriculumVitae';
+import Projects from './Projects/Projects';
+import Competency from './Competency/Competency';
 import MyJourney from './MyJourney/MyJourney';
 
-function Home() {
-  const [bubbleChatTextTab, setBubbleChatTextTab] = useState(Data.BubbleTab);
+function Home({ currentLanguage, toggleLanguage }) {
+  const [bubbleChatTextTab, setBubbleChatTextTab] = useState(DataFr.BubbleTab);
   const [currentComponent, setCurrentComponent] = useState('TextBackground');
   const cleanStatusBubble = useCallback(() => {
     setBubbleChatTextTab((prevArray) =>
@@ -30,6 +34,13 @@ function Home() {
   };
 
   useEffect(() => {
+    if (currentLanguage == 'FR') {
+      setBubbleChatTextTab(DataFr.BubbleTab);
+    } else {
+      setBubbleChatTextTab(DataEn.BubbleTab);
+    }
+  }, [currentLanguage]);
+  useEffect(() => {
     // eslint-disable-next-line
     const timerId = setTimeout(() => {
       // eslint-disable-next-line
@@ -48,21 +59,32 @@ function Home() {
         cleanStatusBubble={cleanStatusBubble}
         handleCurrentComponent={handleCurrentComponent}
         currentComponent={currentComponent}
+        currentLanguage={currentLanguage}
       />
       <InfoCard
         bubbleChatTextTab={bubbleChatTextTab}
         cleanStatusBubble={cleanStatusBubble}
         actifToggleStatusBubble={actifToggleStatusBubble}
+        currentLanguage={currentLanguage}
+      />
+      <Languages
+        currentLanguage={currentLanguage}
+        toggleLanguage={toggleLanguage}
       />
       {currentComponent === '0' ? (
         <PresentationTextHome
           handleCurrentComponent={handleCurrentComponent}
           actifToggleStatusBubble={actifToggleStatusBubble}
+          textPresentation={DataFr.textHome}
         />
       ) : currentComponent === 'TextBackground' ? (
         <p className="textBackground">FRONT END DEVELOPER</p>
       ) : currentComponent === '2' ? (
         <CurriculumVitae />
+      ) : currentComponent === '3' ? (
+        <Projects />
+      ) : currentComponent === '4' ? (
+        <Competency />
       ) : currentComponent === '5' ? (
         <MyJourney />
       ) : null}

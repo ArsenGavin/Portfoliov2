@@ -7,6 +7,8 @@ import {
   AiFillGithub,
 } from 'react-icons/ai';
 import { FaMobileAlt } from 'react-icons/fa';
+import DataFr from '../../../Utils/Data-Fr.json';
+import DataEn from '../../../Utils/Data-En.json';
 
 const infoCard = [
   {
@@ -27,6 +29,7 @@ function PresentationCard({
   bubbleChatTextTab,
   cleanStatusBubble,
   actifToggleStatusBubble,
+  currentLanguage,
 }) {
   const copyText = (textToCopy) => {
     // Créez une instance de ClipboardItem
@@ -58,9 +61,13 @@ function PresentationCard({
       />
       <div className="presentationCardContainer">
         <h2 className="titleCard">
-          Front-End
+          {currentLanguage === 'FR'
+            ? DataFr.infoCardText1
+            : DataEn.infoCardText1}
           <br />
-          Développeur
+          {currentLanguage === 'FR'
+            ? DataFr.infoCardText2
+            : DataEn.infoCardText2}
         </h2>
         <div className="iconReseauBox">
           <AiOutlineLinkedin

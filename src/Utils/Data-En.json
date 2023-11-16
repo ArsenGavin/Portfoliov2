@@ -2,7 +2,7 @@
     "BubbleTab": [
       {
         "id": "1",
-        "text": "Copieur !",
+        "text": "The text is copied !",
         "msgTime": "6",
         "status": false
       },
@@ -15,33 +15,33 @@
       },
       {
         "id": "3",
-        "text": "Mes différents projets sont regroupés ici.",
+        "text": "My different projects are grouped here.",
         "msgTime": "6",
         "status": false
       },
       {
         "id": "4",
-        "text": "Certain de mes skills.. ",
-        "citation": "Je ne pouvais pas tout mettre, je n'avais plus de place 😅 .",
+        "text": "Some of my skills.. ",
+        "citation": "I could not put everything, I had no more room 😅.",
         "msgTime": "6",
         "status": false
       },
       {
         "id": "5",
-        "text": "C'est ma galerie d'art perso !",
+        "text": "This is my personal art gallery !",
         "msgTime": "6",
         "status": false
       }
     ],
     "DashBoard": [
-      "Projets",
-      "Compétences",
+      "Projects",
+      "Skills",
       "MyJourney"
     ],
     "ColorTabMatrixWall": [
       {
         "color": "#FE4760",
-        "text": "Rouge"
+        "text": "Red"
       },
       {
         "color": "#ffc107",
@@ -49,19 +49,19 @@
       },
       {
         "color": "#ffff62",
-        "text": "Jaune"
+        "text": "Yellow"
       },
       {
         "color": "#0F0",
-        "text": "Vert"
+        "text": "Green"
       },
       {
         "color": "#007bff",
-        "text": "Bleu"
+        "text": "Blue"
       },
       {
         "color": "#6f42c1",
-        "text": "Violet"
+        "text": "Purple"
       },
       {
         "color": [
@@ -79,7 +79,7 @@
     "PoliceTabMatrixWall": [
       {
         "str": "01",
-        "text": "Binaire"
+        "text": "Binary"
       },
       {
         "str": "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン",
@@ -95,12 +95,12 @@
       },
       {
         "str": "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
-        "text": "Grec"
+        "text": "Greek"
       }
     ],
-    "infoCardText1": "Développeur",
+    "infoCardText1": "Developer",
     "infoCardText2": "Front-End",
-    "textHome": "Bonjour ! \n\nMon nom est Thomas Birmingham et je suis développeur. \n\nActuellement à la recherche d'un poste je suis disponible en Ile de France ou en full remote. \n\nN'hésitez pas à partager avec moi l'un de vos prochains projets !",
+    "textHome": "Hello ! \n\nMy name is Thomas Birmingham and I am a developer. \n\nCurrently looking for a position, I am available in Ile de France or for full remote work. \n\nFeel free to share with me any of your upcoming projects !",
     "CurriculumVitae":[
       {
         "cv": "Télécharger le CV",

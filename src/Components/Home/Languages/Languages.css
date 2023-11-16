@@ -1,0 +1,23 @@
+.languagesContainer {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 2.5%;
+    right: 35px;
+}
+
+.btnLanguage {
+    margin: 0 5%;
+    padding: 5% 10%;
+    font-size: 15px;
+    color:rgb(236 228 222) ;
+    background-color: black;
+    font-weight: 900;
+    border-radius: 8px;
+}
+
+.btnLanguageActif {
+    color:black;
+    background-color: rgb(236 228 222);
+}

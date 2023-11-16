@@ -5,6 +5,7 @@ import { IoMdCloseCircleOutline } from 'react-icons/io';
 function PresentationTextHome({
   handleCurrentComponent,
   actifToggleStatusBubble,
+  textPresentation,
 }) {
   const handleClick = () => {
     handleCurrentComponent('2');
@@ -15,7 +16,7 @@ function PresentationTextHome({
       <TypeAnimation
         sequence={[
           // Same substring at the start will only be typed out once, initially
-          "Bonjour ! \n\nMon nom est Thomas Birmingham et je suis développeur. \n\nActuellement à la recherche d'un poste je suis disponible en Ile de France ou en full remote. \n\nN'hésitez pas à partager avec moi l'un de vos prochains projets !",
+          textPresentation,
         ]}
         wrapper="span"
         speed={60}
@@ -36,8 +37,6 @@ function PresentationTextHome({
         }}
       />
     </div>
-
-    //   repeat={Infinity}
   );
 }
 
