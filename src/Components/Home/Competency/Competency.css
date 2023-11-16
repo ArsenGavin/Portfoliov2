@@ -1,0 +1,270 @@
+.competencyContainer {
+    width: 65vw;
+    height: fit-content;
+    background: rgb(245 239 235 / 89%);
+    position: fixed;
+    bottom: 15%;
+    left: 60%;
+    transform: translate(-50%, 0%);
+    padding: 2% 2% 4%;
+    border-radius: 20px;
+    border: 4px;
+    overflow: auto;
+    animation: fadeIn 2s ease-in;
+    color:black;
+}
+
+.competencyUnderContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes fadeIn {
+    from,
+      to {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+.competencyBox{
+    width: 50%;
+    text-align: center;
+}
+
+.competencyBoxAlt{
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.competencyBox h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.competencyBoxAlt h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+.competencys{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;   
+}
+
+.skillIconBox{
+    width: 33%;
+}
+
+.skillIconBox h5{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.icon1{
+    background-image: url('../../../img/html5.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+
+.icon2{
+    background-image: url('../../../img/css3.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+
+.icon3{
+    background-image: url('../../../img/sass.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+
+.icon4{
+    background-image: url('../../../img/photoshop.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+.icon5{
+    background-image: url('../../../img/illustrator.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+.icon6{
+    background-image: url('../../../img/canva.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+
+.icon7{
+    background-image: url('../../../img/javascript.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+.icon8{
+    background-image: url('../../../img/jquery.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+.icon9{
+    background-image: url('../../../img/react.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+
+.icon10{
+    background-image: url('../../../img/next.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+.icon11{
+    background-image: url('../../../img/vue.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+.icon12{
+    background-image: url('../../../img/angular.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    margin: 10% auto;
+}
+
+.span1 {
+    display: block;
+    width: 2px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    margin-top: 1.5%;
+}
+
+/* .span1::before {
+    content: '•';
+    position: absolute;
+    top: -39px;
+    left: -11px;
+    font-size: 68px;
+    color:black;
+    animation: gradiantColor2 10s infinite;
+} */
+
+.span1::after {
+    content: '•';
+    position: absolute;
+    bottom: -39px;
+    left: -11px;
+    font-size: 68px;
+    color:black;
+    z-index: 5;
+    animation: gradiantColor2 5s infinite;
+}
+
+
+.span2 {
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    margin: auto;
+}
+
+.span2::before {
+    content: '•';
+    position: absolute;
+    top: -39px;
+    left: -11px;
+    font-size: 68px;
+    color:black;
+    animation: gradiantColor2 10s infinite;
+}
+
+.span2::after {
+    content: '•';
+    position: absolute;
+    top: -39px;
+    right: -11px;
+    font-size: 68px;
+    color:black;
+    animation: gradiantColor2 10s infinite;
+}
+
+@keyframes gradiantColor2 {
+    from,
+      to {
+      color: rgb(236 228 222)
+    }
+    50% {
+      color: hsl(0, 0%, 0%);
+    }
+    100% {
+        color: rgb(236 228 222)
+      }
+  }
+
+  @-moz-keyframes gradiantColor2 { /* sur Firefox */
+    from,
+      to {
+      color: rgb(236 228 222)
+    }
+    50% {
+      color: hsl(0, 0%, 0%);
+    }
+    100% {
+        color: rgb(236 228 222)
+      }
+  }
+
+  @-webkit-keyframes gradiantColor2 { /* sur Safari et Chrome */
+    from,
+      to {
+      color: rgb(236 228 222)
+    }
+    50% {
+      color: hsl(0, 0%, 0%);
+    }
+    100% {
+        color: rgb(236 228 222)
+      }
+  }
+
+  @-o-keyframes gradiantColor2 { /* sur Opera */
+    from,
+      to {
+      color: rgb(236 228 222)
+    }
+    50% {
+      color: hsl(0, 0%, 0%);
+    }
+    100% {
+        color: rgb(236 228 222)
+      }
+  }

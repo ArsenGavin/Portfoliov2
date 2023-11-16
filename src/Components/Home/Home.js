@@ -34,7 +34,7 @@ function Home({ currentLanguage, toggleLanguage }) {
   };
 
   useEffect(() => {
-    if (currentLanguage == 'FR') {
+    if (currentLanguage === 'FR') {
       setBubbleChatTextTab(DataFr.BubbleTab);
     } else {
       setBubbleChatTextTab(DataEn.BubbleTab);
@@ -83,7 +83,7 @@ function Home({ currentLanguage, toggleLanguage }) {
       ) : currentComponent === '3' ? (
         <Projects />
       ) : currentComponent === '4' ? (
-        <Competency />
+        <Competency currentLanguage={currentLanguage} />
       ) : currentComponent === '5' ? (
         <MyJourney />
       ) : null}

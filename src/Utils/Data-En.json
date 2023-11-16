@@ -98,65 +98,65 @@
         "text": "Greek"
       }
     ],
-    "infoCardText1": "Developer",
-    "infoCardText2": "Front-End",
-    "textHome": "Hello ! \n\nMy name is Thomas Birmingham and I am a developer. \n\nCurrently looking for a position, I am available in Ile de France or for full remote work. \n\nFeel free to share with me any of your upcoming projects !",
-    "CurriculumVitae":[
-      {
-        "cv": "Télécharger le CV",
-        "experience": [
-          {
-            "title" : "EXPÉRIENCE PROFESSIONNELLE"
-          },
-          {
-            "title": "DÉVELOPPEUR FRONT-END JUNIOR INTÉGRATION ET CONCEPTION FRONT. R&D",
-            "companyDate": "Heaven, Wami Concept | 2020-2022",
-            "responsibilities": [
-              "Intégration HTML CSS",
-              "Conception de solutions en JAVASCRIPT/JQUERY et en REACT JS",
-              "R&D : machine learning avec Tensorflow (classification)",
-              "R&D : avec AR.JS (réalité augmentée en Webapp)"
-            ],
-            "description": "Au début de mon contrat au sein de l'entreprise, j'ai été amené à faire de l'intégration classique hmtl css, puis à concevoir des solutions en javascript/ Jquery et en React Js (techno sur laquelle j'évolue au quotidien). Puis j'ai effectué de la R&D afin d'agrandir notre catalogue de vente, notamment sur des technos comme le machine learning avec Tensorflow qui m'a permis de faire de la reconnaissance d'objets (classification), ou avec AR.js une lib qui permet de faire un rendu de réalité augmentée en Webapp."
-          },
-          {
-            "title": "DÉVELOPPEUR FRONT-END JUNIOR",
+      "infoCardText1": "Developer",
+      "infoCardText2": "Front-End",
+      "textHome": "Hello ! \n\nMy name is Thomas Birmingham and I am a developer. \n\nCurrently looking for a position, I am available in Ile de France or for full remote work. \n\nFeel free to share with me any of your upcoming projects !",
+      "CurriculumVitae":[
+        {
+          "cv": "Download CV",
+          "experience": [
+        {
+          "title" : "PROFESSIONAL EXPERIENCE"
+        },
+        {
+          "title": "JUNIOR FRONT-END DEVELOPER FRONT-END INTEGRATION AND DESIGN R&D",
+          "companyDate": "Heaven, Wami Concept | 2020-2022",
+          "responsibilities": [
+              "HTML CSS Integration",
+              "Designing solutions in JAVASCRIPT/JQUERY and REACT JS",
+              "R&D: machine learning with Tensorflow (classification)",
+              "R&D: with AR.JS (augmented reality in Webapp)"
+          ],
+          "description": "At the beginning of my contract within the company, I was involved in classic html css integration, then in     designing solutions in javascript/ jquery and React Js (technology on which I evolve on a daily basis). Then, I conducted R&D to expand our sales catalog, notably on technologies like machine learning with Tensorflow which allowed me to do object recognition (classification), or with AR.js a library that allows augmented reality rendering in Webapp."
+        },
+        {
+            "title": "JUNIOR FRONT-END DEVELOPER",
             "companyDate": "Syllès informatique | 2019",
             "responsibilities": [
-              "Développement du site web de l'entreprise (https://sylles.fr/)",
-              "Création d'un outil de calcul pour permettre un devis en ligne",
-              "Approfondissement des compétences JOOMLA, YOOTHEME, librairie JOOMLA ULKIT, HTML 5, CSS 3, JAVASCRIPT, JQUERY, PHOTOSHOP, SHOTCUT"
+                "Development of the company's website (https://sylles.fr/)",
+                "Creation of a calculation tool to enable an online quote",
+                "Deepening of skills in JOOMLA, YOOTHEME, JOOMLA ULKIT library, HTML 5, CSS 3, JAVASCRIPT, JQUERY, PHOTOSHOP, SHOTCUT"
             ]
-          }
+        }
         ],
-        "education": [
-          {
-            "title" : "FORMATION"
-          },
-          {
-            "title": "EPITECH Paris",
-            "degreeDate": "Master (bac +5) Msc Pro Alternance | 2020-2022",
-            "description": "Architecte logiciel, développeur d'application"
-          },
-          {
-            "title": "OPENCLASSROOMS",
-            "degreeDate": "Bachelor (bac +3) | 2018-2019",
-            "description": "Développeur d'application Front- End"
-          },
-          {
-            "title": "ECOLE 42",
-            "date": "2017 - 2018",
-            "description": "Formation langage C"
-          },
-          {
-            "title": "ÉCOLE NATIONALE SUPÉRIEURE D'ART DE BOURGES",
-            "date": "2013-2015",
-            "description": "Apprentissage des arts (dessin, peinture, sculpture, histoire de l'art)"
-          }
-        ]
-      }
+          "education": [
+                {
+                  "title" : "EDUCATION"
+                },
+                {
+                  "title": "EPITECH Paris",
+                  "degreeDate": "Master's Degree (bac +5) Msc Pro Apprenticeship | 2020-2022",
+                  "description": "Software architect, application developer"
+                },
+                {
+                  "title": "OPENCLASSROOMS",
+                  "degreeDate": "Bachelor's Degree (bac +3) | 2018-2019",
+                  "description": "Front-End Application Developer"
+                  },
+                {
+                  "title": "ECOLE 42",
+                  "date": "2017 - 2018",
+                  "description": "C language training"
+                },
+                {
+                  "title": "ÉCOLE NATIONALE SUPÉRIEURE D'ART DE BOURGES",
+                  "date": "2013-2015",
+                  "description": "Learning arts (drawing, painting, sculpture, art history)"
+                }
+           ]
+        }
     ]
-  }
+}
     
   
   

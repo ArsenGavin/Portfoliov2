@@ -1,9 +1,16 @@
 import './CurriculumVitae.css';
-import Data from '../../../Utils/Data-Fr.json';
+import DataFr from '../../../Utils/Data-Fr.json';
+import DataEn from '../../../Utils/Data-En.json';
 import CV from '../../../doc/Thomas Birmingham CV 2023.pdf';
 import imgCv from '../../../img/cvImg.png';
+import { useEffect } from 'react';
 
-function CurriculumVitae() {
+function CurriculumVitae({ currentLanguage }) {
+  let Data = DataFr;
+  useEffect(() => {
+    currentLanguage === 'FR' ? (Data = DataFr) : (Data = DataEn);
+    console.log('ca rentre');
+  }, [currentLanguage]);
   return (
     <div className="cvContainer">
       <div className="cvBox">
