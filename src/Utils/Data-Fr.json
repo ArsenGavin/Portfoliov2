@@ -95,8 +95,6 @@
     ],
     "CurriculumVitae":[
       {
-        "paragraph": "Diplômé d'Epitech en tant qu'architecte logiciel et développeur d'applications, je souhaite apporter mes compétences à votre entreprise.",
-        "paragraph2": "Polyvalence, motivation et curiosité sont les qualités qui me définissent au travail.",
         "cv": "Télécharger le CV",
         "experience": [
           {
@@ -128,7 +126,7 @@
             "title" : "FORMATION"
           },
           {
-            "title": "EPITECH",
+            "title": "EPITECH Paris",
             "degreeDate": "Master (bac +5) Msc Pro Alternance | 2020-2022",
             "description": "Architecte logiciel, développeur d'application"
           },

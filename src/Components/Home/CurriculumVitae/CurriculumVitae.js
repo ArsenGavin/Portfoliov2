@@ -1,24 +1,17 @@
 import './CurriculumVitae.css';
 import Data from '../../../Utils/Data-Fr.json';
 import CV from '../../../doc/Thomas Birmingham CV 2023.pdf';
-import { BsPaperclip } from 'react-icons/bs';
+import imgCv from '../../../img/cvImg.png';
 
 function CurriculumVitae() {
-  // const data = 'Contenu du fichier à télécharger';
-  // const encodedData = btoa(data); // Encode le texte en base64
   return (
     <div className="cvContainer">
       <div className="cvBox">
-        <p className="cvTitle">
-          {Data.CurriculumVitae[0].paragraph}
-          <br />
-          {Data.CurriculumVitae[0].paragraph2}
-        </p>
         <a
           href={CV}
           download="Thomas Birmingham CV 2023.pdf" // Nom du fichier à télécharger
         >
-          {Data.CurriculumVitae[0].cv} <BsPaperclip />
+          <img src={imgCv} className="imgCv" alt="Cv" />
         </a>
       </div>
 
