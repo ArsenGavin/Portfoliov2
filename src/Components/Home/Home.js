@@ -79,7 +79,7 @@ function Home({ currentLanguage, toggleLanguage }) {
       ) : currentComponent === 'TextBackground' ? (
         <p className="textBackground">FRONT END DEVELOPER</p>
       ) : currentComponent === '2' ? (
-        <CurriculumVitae />
+        <CurriculumVitae currentLanguage={currentLanguage} />
       ) : currentComponent === '3' ? (
         <Projects />
       ) : currentComponent === '4' ? (
