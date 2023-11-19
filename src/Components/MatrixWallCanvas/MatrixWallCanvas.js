@@ -49,7 +49,7 @@ function MatrixWallCanvas(props) {
         rainDrops[i]++;
       }
     };
-    intervalIDRef.current = setInterval(draw, 120);
+    intervalIDRef.current = setInterval(draw, 75);
     return () => {
       cleanupCanvas(canvas, context);
       clearInterval(intervalIDRef.current);
