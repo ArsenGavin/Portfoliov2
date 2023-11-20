@@ -42,7 +42,7 @@ function Competency({ currentLanguage }) {
             </div>
             <div className="skillIconBox">
               <div className="icon6"></div>
-              <h5>CANVA</h5>
+              <h5>FIGMA</h5>
             </div>
           </div>
         </div>

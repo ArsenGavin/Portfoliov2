@@ -1,0 +1,77 @@
+.ProjectContainer {
+    width: 65vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: rgb(236 228 222);
+    /* position: fixed; */
+    top: 20%;
+    left: 3%;
+    padding: 0 2% 2%;
+    border-radius: 20px;
+    border: 4px;
+    overflow: auto;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from,
+      to {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+.itemProject {
+    text-align: center;
+    width: 93%;
+}
+
+.itemProject h3 {
+    margin: 3% 0 2%;
+    font-size: 2em;
+}
+
+.titleGitItemProject {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+.itemProject p {
+    /* text-align: left; */
+    font-weight: 500;
+    color: black;
+    margin: 1% 0;
+}
+
+.itemProject p {
+    /* text-align: left; */
+    font-weight: 500;
+    color: black;
+    margin: 1% 0;
+}
+
+.descriptifItem {
+    width: 100%;
+    padding: 0 20%;
+    margin: auto;
+    text-align: left;
+}
+
+.cryptoImg , .epicRoadTripImg {
+    width: 60%;
+    height: auto;
+    text-align: center;
+    margin: 1% 0;
+}
+
+.myYakImg {
+    width: 15%;
+    height: auto;
+    text-align: center;
+    margin: 4% 0 2%;
+    border-radius: 25px;
+}

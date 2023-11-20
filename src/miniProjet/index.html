@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html  lang="fr">
+  <head>
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta charset="utf-8"/>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+      <!-- Premiere view START-->
+      <div id="containerHome">
+
+          <!-- Fond d'écran START-->
+          <img id="fondHome" src="./src/_0.jpg" alt="fond d'ecran">
+          <img id="fondHomeGif" src="./src/gifFond.gif" alt="fond d'ecran">
+          
+          <!-- Fond d'écran END -->
+
+          <!-- Date START-->
+          <div id="dateHome">
+              <p id="heureHome">23:59</p>
+              <p id="dayHome">Vendredi 31 d&eacute;cembre</p>
+          </div>
+          <!-- Date END-->
+
+          <!-- Notif message START-->
+          <div id="msgHome" class="hide">
+              <div id="basicMsgHome" >
+                  <img id="iconMsgHome" src="./src/imessage.png" alt="icon heaven">
+                  <p id="heavenMsgHome"><span>heaven </span></p>
+                  <p id="dateMsgHome">maintenant</p>
+              </div>
+          </div>
+          <!-- Notif message END-->
+
+      </div>
+      <!-- Premiere view END-->
+
+      <!-- Deuxieme view START-->
+      <div id="containerMsg" class="hide">
+
+          <!-- HEADER CONV START-->
+          <div id="headerMsg">
+              <img id="logoMsg" src="./src/logo_heaven.jpg" alt="logo heaven">
+              <p id="titleMsg" >heaven</p>
+          </div>
+          <!-- HEADER CONV END-->
+
+          <!-- CONV START-->
+          <div class="chat">
+              <div class="yours messages">
+                  <div id="msg1" class="hide" >
+                      <!-- <div id="convMsgSend1" class="message last"> -->
+                        <img id="gifMsg" src="./src/heaven_voeux_motion.gif" alt="gif heaven halo">
+                      <!-- </div>                 -->
+                  </div>
+                  <div id="msg2" class="hide" >
+                      <div id="textMsgSending1" class="message last translatePt"> 
+                          <p id=".1" class="translatePt1">&bull;</p>
+                          <p id=".2" class="translatePt2">&bull;</p>
+                          <p id=".3" class="translatePt3">&bull;</p>
+                      </div>
+                  </div>
+
+                  <!-- DACIA START -->
+                  <div id="msg3" class="hide" >
+                      <div id="convMsgSend2" class="message last">
+                        Les anges de l’agence heaven vous souhaitent que tout roule pour cette nouvelle ann&eacute;e <span id="ancreSmileyDacia"></span>
+                      </div>
+                  </div>
+                  <!-- DACIA END -->
+
+                  <!-- DANONE START-->
+                  <!-- <div id="msg3" class="hide" >
+                      <div id="convMsgSend2" class="message last">
+                        Tous les anges de l’agence heaven vous souhaitent une onctueuse nouvelle ann&eacute;e <span id="ancreSmileyDanone"></span>
+                      </div>
+                  </div> -->
+                  <!-- DANONE END -->
+
+                  <!-- Deliveroo  START -->
+                  <!-- <div id="msg3" class="hide" >
+                      <div id="convMsgSend2" class="message last">
+                        Tous les anges de l’agence heaven vous livrent une superbe ann&eacute;e 2022<span id="ancreSmileyDeliveroo"></span>
+                      </div>
+                  </div> -->
+                 <!-- Deliveroo  END -->
+
+                  <!-- Engie  START-->
+                  <!-- <div id="msg3" class="hide" >
+                      <div id="convMsgSend2" class="message last">
+                        Tous les anges de l’agence heaven vous souhaitent une ann&eacute;e pleine d’énergie ️<span id="ancreSmileyEngie"></span>
+                      </div>
+                  </div> -->
+                 <!-- Engie  END -->
+
+                  <!-- GENERIQUE START -->
+                  <!-- <div id="msg3" class="hide" >
+                      <div id="convMsgSend2" class="message last">
+                        heaven et tous les anges vous souhaitent une belle ann&eacute;e 2022
+                      </div>
+                  </div> -->
+                 <!-- GENERIQUE END -->
+
+
+                  <div id="msg4" class="hide" >
+                      <div id="textMsgSending2" class="message last translatePt"> 
+                          <p id=".1" class="translatePt1">&bull;</p>
+                          <p id=".2" class="translatePt2">&bull;</p>
+                          <p id=".3" class="translatePt3">&bull;</p>
+                      </div>
+                  </div>
+
+                  <div id="msg5" class="hide" >
+                      <div id="convMsgSend3 iframe" class="message last">
+                        Pour fêter ça, on a décidé de vous accompagner en musique. Une playlist par heaven, avec heaven, pour vous <img id="smileyPlaylist" src="./src/smiley-angel.png" alt="gif heaven halo">. <br>À bientôt ! <br><br><iframe id="iframe" src="https://open.spotify.com/embed/playlist/6NohQJCKrvK8LOfTVKzwqr?si=1efb84a7495f41d2" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                      </div>
+                      <span id="clickPauseAudio"></span>
+                  </div>
+
+              </div>
+
+          </div> 
+          <!-- CONV END-->
+
+      </div>
+      <!-- Deuxieme view END-->
+
+  </body>
+
+  <script type="text/javascript" src="main.js"></script>
+</html>
