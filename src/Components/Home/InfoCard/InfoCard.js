@@ -10,27 +10,26 @@ import { FaMobileAlt } from 'react-icons/fa';
 import DataFr from '../../../Utils/Data-Fr.json';
 import DataEn from '../../../Utils/Data-En.json';
 
-const infoCard = [
-  {
-    icon: <AiOutlineHome className="iconAlt" />,
-    text: 'Courbevoie, 92400',
-  },
-  {
-    icon: <AiOutlineMail className="iconAlt" />,
-    text: 'thomas.g.birmingham@gmail.com',
-  },
-  {
-    icon: <FaMobileAlt className="iconAlt" />,
-    text: '0674767560',
-  },
-];
-
 function PresentationCard({
   bubbleChatTextTab,
   cleanStatusBubble,
   actifToggleStatusBubble,
   currentLanguage,
 }) {
+  const infoCard = [
+    {
+      icon: <AiOutlineHome className="iconAlt" />,
+      text: 'Courbevoie, 92400',
+    },
+    {
+      icon: <AiOutlineMail className="iconAlt" />,
+      text: 'thomas.g.birmingham@gmail.com',
+    },
+    {
+      icon: <FaMobileAlt className="iconAlt" />,
+      text: '0674767560',
+    },
+  ];
   const copyText = (textToCopy) => {
     // Créez une instance de ClipboardItem
     const clipboardItem = new ClipboardItem({
@@ -48,7 +47,6 @@ function PresentationCard({
         console.error('Erreur lors de la copie dans le presse-papiers', err);
       });
   };
-
   const openWebOnglet = (Link) => {
     window.open(Link, '_blank');
   };

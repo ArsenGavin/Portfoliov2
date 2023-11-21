@@ -3,22 +3,17 @@ import profilThomas from '../../../../img/ThomasManga.png';
 import { useEffect } from 'react';
 
 function BubbleChat({ bubbleChatTextTab, cleanStatusBubble }) {
-  // eslint-disable-next-line
   useEffect(() => {
-    let currentTimer = 6;
-    bubbleChatTextTab.map((data) => {
-      return data.status === true ? (currentTimer = data.msgTime) : null;
-    });
-    // eslint-disable-next-line
-    const timerId = setTimeout(() => {
-      // eslint-disable-next-line
-      cleanStatusBubble();
-      // eslint-disable-next-line
-    }, currentTimer * 1000);
-    // eslint-disable-next-line
-    return () => clearTimeout(timerId);
-    // eslint-disable-next-line
-  }, [bubbleChatTextTab]);
+    const activeBubble = bubbleChatTextTab.find((data) => data.status);
+
+    if (activeBubble) {
+      const timerId = setTimeout(() => {
+        cleanStatusBubble();
+      }, activeBubble.msgTime * 1000);
+
+      return () => clearTimeout(timerId);
+    }
+  }, [bubbleChatTextTab, cleanStatusBubble]);
   return (
     <div className="chatBox">
       <img src={profilThomas} className="imgProfil" alt="Logo" />

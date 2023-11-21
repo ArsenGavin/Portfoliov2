@@ -16,9 +16,7 @@ function Home({ currentLanguage, toggleLanguage }) {
   const [currentComponent, setCurrentComponent] = useState('TextBackground');
   const cleanStatusBubble = useCallback(() => {
     setBubbleChatTextTab((prevArray) =>
-      prevArray.map((item) =>
-        item.status === true ? { ...item, status: !item.status } : item
-      )
+      prevArray.map((item) => (item.status ? { ...item, status: false } : item))
     );
   }, [setBubbleChatTextTab]);
   const actifToggleStatusBubble = (currentItemId) => {
@@ -48,10 +46,10 @@ function Home({ currentLanguage, toggleLanguage }) {
       // eslint-disable-next-line
     }, 8000);
     // eslint-disable-next-line
+
     return () => clearTimeout(timerId);
     // eslint-disable-next-line
   }, []);
-
   return (
     <div className="home">
       <Dashboard
@@ -65,6 +63,7 @@ function Home({ currentLanguage, toggleLanguage }) {
         bubbleChatTextTab={bubbleChatTextTab}
         cleanStatusBubble={cleanStatusBubble}
         actifToggleStatusBubble={actifToggleStatusBubble}
+        currentLanguage={currentLanguage}
       />
       <Languages
         currentLanguage={currentLanguage}

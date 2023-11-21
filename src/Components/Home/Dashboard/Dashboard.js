@@ -46,14 +46,14 @@ function Dashboard({
         >
           {currentLanguage === 'FR' ? DataFr.DashBoard[1] : DataEn.DashBoard[1]}
         </li>
-        <li
+        {/* <li
           className={`liNav ${currentComponent === '5' ? 'actifNav' : ''}`}
           onClick={() => {
             handleClick('5');
           }}
         >
           {currentLanguage === 'FR' ? DataFr.DashBoard[2] : DataEn.DashBoard[2]}
-        </li>
+        </li> */}
       </ul>
     </div>
   );
