@@ -1,17 +1,17 @@
 .themesBox1 {
   position: fixed;
-  top: 2%;
-  left: 2%;
-  width: auto;
+  bottom: 12%;
+  left: 59px;
+  width: 310px;
   display: flex;
   justify-content: space-between;
 }
 
 .themesBox2 {
   position: fixed;
-  top: 2%;
-  right: 100px;
-  width: min-content;
+  bottom: 8%;
+  left: 59px;
+  width: 310px;
   display: flex;
   justify-content: space-between;
 }
@@ -21,7 +21,7 @@
   width: 6vw;
   max-width: 100px;
   text-decoration: none;
-  padding: 6px;
+  padding: 6px 0;
   font-family: arial;
   color: rgb(236 228 222);
   background-color: #000000;
@@ -33,6 +33,7 @@
   -webkit-box-shadow: 3px 3px 12px #444444;
   -moz-box-shadow: 3px 3px 12px #444444;
   user-select: none;
+  font-size: 12px;
   }
   
   
@@ -50,19 +51,19 @@
 .btnActif2, .btnThemesAtl2:hover {
   border-color: #ffc107;
 }
-.btnActif3, .btnThemesAtl3:hover {
+/* .btnActif3, .btnThemesAtl3:hover {
   border-color: #ffff62;
-}
-.btnActif4, .btnThemesAtl4:hover {
+} */
+.btnActif3, .btnThemesAtl3:hover {
   border-color: #0F0;
 }
-.btnActif5, .btnThemesAtl5:hover {
+.btnActif4, .btnThemesAtl4:hover {
   border-color: #007bff;
 }
-.btnActif6, .btnThemesAtl6:hover {
+.btnActif5, .btnThemesAtl5:hover {
   border-color: #6f42c1;
 }
-.btnActif7, .btnThemesAtl7:hover {
+.btnActif6, .btnThemesAtl6:hover {
   border-color: white;
   animation: gradiantColor 5s infinite;
 }
@@ -162,7 +163,7 @@
   } */
 
 
-  @media only screen and (max-width : 1175px) {
+  /* @media only screen and (max-width : 1175px) {
     .themesBox2 {
       position: fixed;
       top: 8%;
@@ -172,4 +173,4 @@
       justify-content: space-between;
     }
   
-  }
+  } */

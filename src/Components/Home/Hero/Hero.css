@@ -1,0 +1,46 @@
+.heroContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.h1Hero {
+    text-align: center;
+    color: #ece4de;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.h2Hero {
+    text-align: center;
+    color: #ece4de;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 3%;
+    letter-spacing: 2px;
+}
+
+.h3Hero {
+    text-align: center;
+    color: #ece4de;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 3% 0 1%;
+    letter-spacing: 2px;
+}
+
+.LogoTB{
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1%;
+}

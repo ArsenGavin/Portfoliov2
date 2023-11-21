@@ -4,6 +4,7 @@ import { useState, useCallback, useEffect } from 'react';
 import DataFr from '../../Utils/Data-Fr.json';
 import DataEn from '../../Utils/Data-En.json';
 import PresentationTextHome from './PresentationTextHome/PresentationTextHome';
+import Hero from './Hero/Hero';
 import Dashboard from './Dashboard/Dashboard';
 import Languages from './Languages/Languages';
 import CurriculumVitae from './CurriculumVitae/CurriculumVitae';
@@ -11,7 +12,7 @@ import Projects from './Projects/Projects';
 import Competency from './Competency/Competency';
 import MyJourney from './MyJourney/MyJourney';
 
-function Home({ currentLanguage, toggleLanguage }) {
+function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
   const [bubbleChatTextTab, setBubbleChatTextTab] = useState(DataFr.BubbleTab);
   const [currentComponent, setCurrentComponent] = useState('TextBackground');
   const cleanStatusBubble = useCallback(() => {
@@ -42,7 +43,7 @@ function Home({ currentLanguage, toggleLanguage }) {
     // eslint-disable-next-line
     const timerId = setTimeout(() => {
       // eslint-disable-next-line
-      setCurrentComponent('0');
+      setCurrentComponent('2');
       // eslint-disable-next-line
     }, 8000);
     // eslint-disable-next-line
@@ -58,6 +59,7 @@ function Home({ currentLanguage, toggleLanguage }) {
         handleCurrentComponent={handleCurrentComponent}
         currentComponent={currentComponent}
         currentLanguage={currentLanguage}
+        colorPoliceCanvas={colorPoliceCanvas}
       />
       <InfoCard
         bubbleChatTextTab={bubbleChatTextTab}
@@ -69,23 +71,29 @@ function Home({ currentLanguage, toggleLanguage }) {
         currentLanguage={currentLanguage}
         toggleLanguage={toggleLanguage}
       />
-      {currentComponent === '0' ? (
-        <PresentationTextHome
-          handleCurrentComponent={handleCurrentComponent}
-          actifToggleStatusBubble={actifToggleStatusBubble}
-          textPresentation={DataFr.textHome}
-        />
-      ) : currentComponent === 'TextBackground' ? (
-        <p className="textBackground">FRONT END DEVELOPER</p>
-      ) : currentComponent === '2' ? (
-        <CurriculumVitae currentLanguage={currentLanguage} />
-      ) : currentComponent === '3' ? (
-        <Projects />
-      ) : currentComponent === '4' ? (
-        <Competency currentLanguage={currentLanguage} />
-      ) : currentComponent === '5' ? (
-        <MyJourney />
-      ) : null}
+      <div className="homeComponentsContainer">
+        {currentComponent === 'TextBackground' ? (
+          <p className="textBackground">FRONT END DEVELOPER</p>
+        ) : currentComponent === '2' ? (
+          <>
+            {/* <PresentationTextHome
+            handleCurrentComponent={handleCurrentComponent}
+            actifToggleStatusBubble={actifToggleStatusBubble}
+            textPresentation={DataFr.textHome}
+          /> */}
+            <Hero />
+            {
+              /* <CurriculumVitae currentLanguage={currentLanguage} />
+            <Projects />*/
+              <Competency currentLanguage={currentLanguage} />
+            }
+          </>
+        ) : currentComponent === '2' ? null : currentComponent === // <CurriculumVitae currentLanguage={currentLanguage} />
+          '3' ? null : currentComponent === '4' ? null : currentComponent === // <Projects /> // <Competency currentLanguage={currentLanguage} />
+          '5' ? (
+          <MyJourney />
+        ) : null}
+      </div>
     </div>
   );
 }

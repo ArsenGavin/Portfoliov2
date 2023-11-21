@@ -1,15 +1,21 @@
 .home {
-    display: flex;
-    height: 100vh;
+    /* display: flex; */
+    /* height: 100vh; */
 }
+
+.homeComponentsContainer {
+  margin: 0% 0 2% 420px;
+}
+
 
 .textBackground {
     position: fixed;
     top: 50%;
-    left: 58%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 7vw;
     font-weight: 900;
+    text-align: center;
     color: black;    
     animation: textbackgroundfadeout 11s ease-in-t;
     -moz-animation: textbackgroundfadeout 11s ease-in-out; /* Firefox */

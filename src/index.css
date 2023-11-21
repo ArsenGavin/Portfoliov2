@@ -1,12 +1,34 @@
+@font-face {
+  font-family: 'Basement_Grotesque_Roman';
+  src: url('./font/basement_grotesque/BasementGrotesque-Black.woff2') format('woff2'),
+      url('./font/basement_grotesque/BasementGrotesque-Black.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Basement_Grotesque_Roman",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: #2b1151; */
   background: black;
+  scrollbar-color: #346abf white; 
+  scrollbar-width: auto; 
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(236 228 222);
+  outline: 1px solid slategrey;
+  border-radius: 10px;
 }
 
 code {
@@ -21,7 +43,8 @@ code {
   outline: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Basement_Grotesque_Roman",
+  sans-serif;
 }
 
 .WallCanva {

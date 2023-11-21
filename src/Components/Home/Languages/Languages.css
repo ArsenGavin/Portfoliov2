@@ -3,13 +3,13 @@
     width: fit-content;
     height: fit-content;
     position: fixed;
-    top: 2.5%;
-    right: 35px;
+    top: 24px;
+    right: 54px;
 }
 
 .btnLanguage {
     margin: 0 5%;
-    padding: 5% 10%;
+    padding: 10% 10% 8%;
     font-size: 15px;
     color:rgb(236 228 222) ;
     background-color: black;

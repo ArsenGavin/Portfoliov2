@@ -10,7 +10,7 @@ function Themes({
   currentLanguage,
 }) {
   return (
-    <div>
+    <>
       <div className="themesBox1">
         {currentLanguage === 'FR'
           ? DataFr.ColorTabMatrixWall.map((data, index) => {
@@ -56,8 +56,8 @@ function Themes({
               return (
                 <button
                   key={data.str}
-                  className={`btnThemes btnThemesAtl7 ${
-                    data.str === policeCanvas ? `btnActif7` : ''
+                  className={`btnThemes btnThemesAtl6 ${
+                    data.str === policeCanvas ? `btnActif6` : ''
                   }`}
                   onClick={() => {
                     externalCleanupCanvas(data.str);
@@ -71,8 +71,8 @@ function Themes({
               return (
                 <button
                   key={data.str}
-                  className={`btnThemes btnThemesAtl7 ${
-                    data.str === policeCanvas ? `btnActif7` : ''
+                  className={`btnThemes btnThemesAtl6 ${
+                    data.str === policeCanvas ? `btnActif6` : ''
                   }`}
                   onClick={() => {
                     externalCleanupCanvas(data.str);
@@ -83,7 +83,7 @@ function Themes({
               );
             })}
       </div>
-    </div>
+    </>
   );
 }
 

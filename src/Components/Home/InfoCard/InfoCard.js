@@ -1,12 +1,14 @@
 import './InfoCard.css';
 import BubbleChat from './BubbleChat/BubbleChat';
+import CV from '../../../doc/Thomas Birmingham CV 2023.pdf';
+import { LuFileSpreadsheet } from 'react-icons/lu';
 import {
   AiOutlineHome,
   AiOutlineLinkedin,
   AiOutlineMail,
   AiFillGithub,
 } from 'react-icons/ai';
-import { FaMobileAlt } from 'react-icons/fa';
+import { BsEnvelopeAt } from 'react-icons/bs';
 import DataFr from '../../../Utils/Data-Fr.json';
 import DataEn from '../../../Utils/Data-En.json';
 
@@ -18,16 +20,10 @@ function PresentationCard({
 }) {
   const infoCard = [
     {
-      icon: <AiOutlineHome className="iconAlt" />,
       text: 'Courbevoie, 92400',
     },
     {
-      icon: <AiOutlineMail className="iconAlt" />,
       text: 'thomas.g.birmingham@gmail.com',
-    },
-    {
-      icon: <FaMobileAlt className="iconAlt" />,
-      text: '0674767560',
     },
   ];
   const copyText = (textToCopy) => {
@@ -47,6 +43,10 @@ function PresentationCard({
         console.error('Erreur lors de la copie dans le presse-papiers', err);
       });
   };
+
+  const dlCV = () => {
+    actifToggleStatusBubble('6');
+  };
   const openWebOnglet = (Link) => {
     window.open(Link, '_blank');
   };
@@ -59,13 +59,7 @@ function PresentationCard({
       />
       <div className="presentationCardContainer">
         <h2 className="titleCard">
-          {currentLanguage === 'FR'
-            ? DataFr.infoCardText1
-            : DataEn.infoCardText1}
-          <br />
-          {currentLanguage === 'FR'
-            ? DataFr.infoCardText2
-            : DataEn.infoCardText2}
+          {currentLanguage === 'FR' ? DataFr.infoCardText : DataEn.infoCardText}
         </h2>
         <div className="iconReseauBox">
           <AiOutlineLinkedin
@@ -82,25 +76,31 @@ function PresentationCard({
               openWebOnglet('https://github.com/ArsenGavin');
             }}
           />
+          <h5>
+            <a
+              href={CV}
+              onClick={() => {
+                dlCV();
+              }}
+              download="Thomas Birmingham CV 2023.pdf" // Nom du fichier à télécharger
+            >
+              <LuFileSpreadsheet className="icon iconCV" />
+            </a>
+          </h5>
+          <BsEnvelopeAt
+            onClick={() => {
+              copyText(infoCard[1].text);
+            }}
+            onKeyDown={() => {
+              copyText(infoCard[1].text);
+            }}
+            className="icon iconCV"
+          />
         </div>
         <div className="infoCardBox">
-          {infoCard?.map((data, index) => {
-            return (
-              <div
-                className="infoCard"
-                key={data.text}
-                onClick={() => {
-                  copyText(data.text);
-                }}
-                onKeyDown={() => {
-                  copyText(data.text);
-                }}
-              >
-                {data.icon}
-                <p className="textInfoCard">{data.text}</p>
-              </div>
-            );
-          })}
+          {/* <div className="infoCard"> */}
+          <p className="textInfoCard">{infoCard[0].text}</p>
+          {/* </div> */}
         </div>
       </div>
     </div>

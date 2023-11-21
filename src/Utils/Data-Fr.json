@@ -2,7 +2,7 @@
     "BubbleTab": [
       {
         "id": "1",
-        "text": "Copieur !",
+        "text": "L'email est copié !",
         "msgTime": "6",
         "status": false
       },
@@ -31,12 +31,18 @@
         "text": "C'est ma galerie d'art perso !",
         "msgTime": "6",
         "status": false
+      },
+      {
+        "id": "6",
+        "text": "Le CV est téléchargé !",
+        "msgTime": "6",
+        "status": false
       }
     ],
     "DashBoard": [
       "Projets",
       "Compétences",
-      "MyJourney"
+      "Contact"
     ],
     "ColorTabMatrixWall": [
       {
@@ -46,10 +52,6 @@
       {
         "color": "#ffc107",
         "text": "Orange"
-      },
-      {
-        "color": "#ffff62",
-        "text": "Jaune"
       },
       {
         "color": "#0F0",
@@ -98,8 +100,7 @@
         "text": "Grec"
       }
     ],
-    "infoCardText1": "Développeur",
-    "infoCardText2": "Front-End",
+    "infoCardText": "Développeur Front-End",
     "textHome": "Bonjour ! \n\nMon nom est Thomas Birmingham et je suis développeur. \n\nActuellement à la recherche d'un poste je suis disponible en Ile de France ou en full remote. \n\nN'hésitez pas à partager avec moi l'un de vos prochains projets !",
     "CurriculumVitae":[
       {

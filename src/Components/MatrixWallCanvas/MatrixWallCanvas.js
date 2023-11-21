@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Themes from './BtnPropsCanvas';
+import './MatrixWallCanvas.css';
 
 function MatrixWallCanvas(props) {
   const ref = useRef(null);
@@ -7,7 +8,6 @@ function MatrixWallCanvas(props) {
   const [policeCanvas, setPoliceCanvas] = useState(
     'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン'
   );
-  const [colorPoliceCanvas, setColorPoliceCanvas] = useState('#007bff');
 
   useEffect(() => {
     const canvas = ref.current;
@@ -26,13 +26,13 @@ function MatrixWallCanvas(props) {
     const draw = () => {
       context.fillStyle = 'rgba(0, 0, 0, 0.05)';
       context.fillRect(0, 0, canvas.width, canvas.height);
-      if (Array.isArray(colorPoliceCanvas)) {
+      if (Array.isArray(props.colorPoliceCanvas)) {
         context.fillStyle =
-          colorPoliceCanvas[
-            Math.floor(Math.random() * colorPoliceCanvas.length)
+          props.colorPoliceCanvas[
+            Math.floor(Math.random() * props.colorPoliceCanvas.length)
           ];
       } else {
-        context.fillStyle = colorPoliceCanvas;
+        context.fillStyle = props.colorPoliceCanvas;
       }
 
       context.font = fontSize + 'px monospace';
@@ -54,7 +54,7 @@ function MatrixWallCanvas(props) {
       cleanupCanvas(canvas, context);
       clearInterval(intervalIDRef.current);
     };
-  }, [policeCanvas, colorPoliceCanvas]);
+  }, [policeCanvas, props.colorPoliceCanvas]);
 
   // Fonction externe pour nettoyer le canvas
   const cleanupCanvas = (canvas, context) => {
@@ -74,10 +74,10 @@ function MatrixWallCanvas(props) {
   };
 
   const externalCleanupCanvasAlt = (color) => {
-    if (color !== colorPoliceCanvas) {
+    if (color !== props.colorPoliceCanvas) {
       cleanupCanvas(ref.current, ref.current.getContext('2d'));
       stopInterval();
-      setColorPoliceCanvas(color);
+      props.setColorPoliceCanvas(color);
     }
   };
   return (
@@ -87,9 +87,10 @@ function MatrixWallCanvas(props) {
         externalCleanupCanvas={externalCleanupCanvas}
         externalCleanupCanvasAlt={externalCleanupCanvasAlt}
         policeCanvas={policeCanvas}
-        colorPoliceCanvas={colorPoliceCanvas}
+        colorPoliceCanvas={props.colorPoliceCanvas}
         currentLanguage={props.currentLanguage}
       />
+      <span className="overlay"></span>
     </>
   );
 }
