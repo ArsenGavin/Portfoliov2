@@ -83,6 +83,7 @@ function PresentationCard({
                 dlCV();
               }}
               download="Thomas Birmingham CV 2023.pdf" // Nom du fichier à télécharger
+              alt="CV Thomas Birmingham"
             >
               <LuFileSpreadsheet className="icon iconCV" />
             </a>
@@ -98,9 +99,7 @@ function PresentationCard({
           />
         </div>
         <div className="infoCardBox">
-          {/* <div className="infoCard"> */}
           <p className="textInfoCard">{infoCard[0].text}</p>
-          {/* </div> */}
         </div>
       </div>
     </div>

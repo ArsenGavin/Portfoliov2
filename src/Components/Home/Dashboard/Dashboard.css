@@ -4,10 +4,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 755px;  
-    animation: dashborardfadein 15s;
-    -moz-animation: dashborardfadein 15s; /* Firefox */
-    -webkit-animation: dashborardfadein 15s; /* Safari et Chrome */
-    -o-animation: dashborardfadein 15s; /* Opera */
+    animation: dashborardfadein 1s ease-in;
+    -moz-animation: dashborardfadein 1s ease-in;  
+    -webkit-animation: dashborardfadein 1s ease-in;
+    -o-animation: dashborardfadein 1s ease-in; 
 }
 
 @keyframes dashborardfadein {
@@ -105,13 +105,15 @@
 .ulNavBox li{
   width: 142px;
   text-align: center;
+  font-family: 'Alatsi';
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .liNav2,.liNav3, .liNav4,.liNavAlt {
     color: rgb(236 228 222);
     text-align: center;
-    font-size: 16px;
-    font-weight: 900;
     margin: 2% 4%;
     width: fit-content;
     height: fit-content;
@@ -212,7 +214,7 @@
 } 
 
 .liNavAlt.actifNav2::after,.liNav2.actifNav2::after,.liNav3.actifNav2::after,.liNav4.actifNav2::after{
-  background-color: #ffc107;
+  background-color: #F76B15;
 } 
 
 .liNavAlt.actifNav3::after,.liNav2.actifNav3::after,.liNav3.actifNav3::after,.liNav4.actifNav3::after{
@@ -239,84 +241,69 @@
     to {
       background-color: hsl(120, 100%, 50%);
     }
-    20% {
+    25% {
       background-color: hsl(211, 100%, 50%);
     }
-    40% {
+    50% {
       background-color: hsl(352, 99%, 64%);
     }
-    60% {
+    75% {
       background-color: hsl(45, 100%, 51%);
     }
-    80% {
-      background-color: hsl(261, 51%, 51%);
-    }
     100% {
-      background-color: hsl(0, 0%, 100%);
+      background-color: hsl(261, 51%, 51%);
     }
     }
     @-moz-keyframes gradiantColorNav {
-    from,
-        to {
-        color: hsl(120, 100%, 50%);
-    }
-    20% {
-        color: hsl(211, 100%, 50%);
-    }
-    40% {
-        color: hsl(352, 99%, 64%);
-    }
-    60% {
-        color: hsl(45, 100%, 51%);
-    }
-    80% {
-        color: hsl(261, 51%, 51%);
-    }
-    100% {
-        color: hsl(0, 0%, 100%);
-    }
+      to {
+        background-color: hsl(120, 100%, 50%);
+      }
+      25% {
+        background-color: hsl(211, 100%, 50%);
+      }
+      50% {
+        background-color: hsl(352, 99%, 64%);
+      }
+      75% {
+        background-color: hsl(45, 100%, 51%);
+      }
+      100% {
+        background-color: hsl(261, 51%, 51%);
+      }
     }
     @-webkit-keyframes gradiantColorNav {
-    from,
-        to {
-        color: hsl(120, 100%, 50%);
-    }
-    20% {
-        color: hsl(211, 100%, 50%);
-    }
-    40% {
-        color: hsl(352, 99%, 64%);
-    }
-    60% {
-        color: hsl(45, 100%, 51%);
-    }
-    80% {
-        color: hsl(261, 51%, 51%);
-    }
-    100% {
-        color: hsl(0, 0%, 100%);
-    }
+      to {
+        background-color: hsl(120, 100%, 50%);
+      }
+      25% {
+        background-color: hsl(211, 100%, 50%);
+      }
+      50% {
+        background-color: hsl(352, 99%, 64%);
+      }
+      75% {
+        background-color: hsl(45, 100%, 51%);
+      }
+      100% {
+        background-color: hsl(261, 51%, 51%);
+      }
     }
     @-o-keyframes gradiantColorNav {
-    from,
-        to {
-        color: hsl(120, 100%, 50%);
-    }
-    20% {
-        color: hsl(211, 100%, 50%);
-    }
-    40% {
-        color: hsl(352, 99%, 64%);
-    }
-    60% {
-        color: hsl(45, 100%, 51%);
-    }
-    80% {
-        color: hsl(261, 51%, 51%);
-    }
-    100% {
-        color: hsl(0, 0%, 100%);
-    }
+      to {
+        background-color: hsl(120, 100%, 50%);
+      }
+      25% {
+        background-color: hsl(211, 100%, 50%);
+      }
+      50% {
+        background-color: hsl(352, 99%, 64%);
+      }
+      75% {
+        background-color: hsl(45, 100%, 51%);
+      }
+      100% {
+        background-color: hsl(261, 51%, 51%);
+      }
     } 
 
       

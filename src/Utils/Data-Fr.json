@@ -50,7 +50,7 @@
         "text": "Rouge"
       },
       {
-        "color": "#ffc107",
+        "color": "#F76B15",
         "text": "Orange"
       },
       {
@@ -156,7 +156,29 @@
           }
         ]
       }
-    ]
+    ],
+    "heroText": 
+      {
+        "textH2": "Développeur Freelance",
+        "textH3": "Contactez-moi pour tous vos projets",
+        "textP1": "ENSEMBLE",
+        "textP2": "DÉVELOPPONS",
+        "textP3": "UN PRODUIT WEB INNOVANT",
+        "product": [
+          {
+            "title": "QUALITATIF", 
+            "text" : "Passez votre business au niveau supérieur avec un projet web à la pointe de la technologie, optimisé, rapide et réactif."
+          },
+          {
+            "title": "OBJECTIF", 
+            "text" : "Imaginer, concevoir et programmer des projets web en proposant des solutions techniques et automatisées."
+          },
+          {
+            "title": "FULL REMOTE", 
+            "text" : "Organisé à distance, on communique, on programme des objectifs, on utilise des méthodes agiles."
+          }
+        ]
+      }
   }
     
   

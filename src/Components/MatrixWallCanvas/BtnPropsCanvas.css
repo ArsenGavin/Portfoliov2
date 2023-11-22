@@ -5,6 +5,10 @@
   width: 310px;
   display: flex;
   justify-content: space-between;
+  animation: cardfadein 2s; 
+  -moz-animation: cardfadein 2s; 
+  -webkit-animation: cardfadein 2s; 
+  -o-animation: cardfadein 2s;
 }
 
 .themesBox2 {
@@ -14,6 +18,10 @@
   width: 310px;
   display: flex;
   justify-content: space-between;
+  animation: cardfadein 2s ease-in; 
+  -moz-animation: cardfadein 2s ease-in; 
+  -webkit-animation: cardfadein 2s ease-in; 
+  -o-animation: cardfadein 2s ease-in;
 }
 
 
@@ -38,7 +46,6 @@
   
   
 .btnThemes:hover {
-  padding: 6px;
   background-color: #2d2d2d;
   box-shadow: 3px 3px 12px #777777;
   -webkit-box-shadow: 3px 3px 12px #777777;
@@ -49,11 +56,8 @@
   border-color: #FE4760;
 }
 .btnActif2, .btnThemesAtl2:hover {
-  border-color: #ffc107;
+  border-color: #F76B15;
 }
-/* .btnActif3, .btnThemesAtl3:hover {
-  border-color: #ffff62;
-} */
 .btnActif3, .btnThemesAtl3:hover {
   border-color: #0F0;
 }

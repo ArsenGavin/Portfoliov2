@@ -50,7 +50,7 @@
         "text": "Red"
       },
       {
-        "color": "#ffc107",
+        "color": "#F76B15",
         "text": "Orange"
       },
       {
@@ -156,7 +156,29 @@
                 }
            ]
         }
-    ]
+    ],
+    "heroText": 
+      {
+        "textH2": "Freelance Developer",
+        "textH3": "Contact me for all your projects",
+        "textP1": "TOGETHER",
+        "textP2": "DEVELOP",
+        "textP3": "AN INNOVATIVE WEB PRODUCT",
+        "product": [
+          {
+            "title": "QUALITATIVE", 
+            "text" : "Take your business to the next level with an optimized, fast and responsive state-of-the-art web project"
+          },
+          {
+            "title": "OBJECTIVE", 
+            "text" : "Imagine, design and program web projects by proposing technical and automated solutions."
+          },
+          {
+            "title": "FULL REMOTE", 
+            "text" : "Organized remotely, we communicate, we program objectives, we use agile methods."
+          }
+        ]
+      }
 }
     
   

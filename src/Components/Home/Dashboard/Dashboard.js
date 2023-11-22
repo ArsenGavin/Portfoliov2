@@ -24,7 +24,7 @@ function Dashboard({
           className={`imgBoxUl liNavAlt ${
             currentComponent === '2' && colorPoliceCanvas === '#FE4760'
               ? 'actifNav1'
-              : currentComponent === '2' && colorPoliceCanvas === '#ffc107'
+              : currentComponent === '2' && colorPoliceCanvas === '#F76B15'
               ? 'actifNav2'
               : currentComponent === '2' && colorPoliceCanvas === '#ffff62'
               ? 'actifNav3'

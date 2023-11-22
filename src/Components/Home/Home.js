@@ -14,7 +14,8 @@ import MyJourney from './MyJourney/MyJourney';
 
 function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
   const [bubbleChatTextTab, setBubbleChatTextTab] = useState(DataFr.BubbleTab);
-  const [currentComponent, setCurrentComponent] = useState('TextBackground');
+  // const [currentComponent, setCurrentComponent] = useState('TextBackground');
+  const [currentComponent, setCurrentComponent] = useState('2');
   const cleanStatusBubble = useCallback(() => {
     setBubbleChatTextTab((prevArray) =>
       prevArray.map((item) => (item.status ? { ...item, status: false } : item))
@@ -43,7 +44,7 @@ function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
     // eslint-disable-next-line
     const timerId = setTimeout(() => {
       // eslint-disable-next-line
-      setCurrentComponent('2');
+      // setCurrentComponent('2');
       // eslint-disable-next-line
     }, 8000);
     // eslint-disable-next-line
@@ -81,7 +82,11 @@ function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
             actifToggleStatusBubble={actifToggleStatusBubble}
             textPresentation={DataFr.textHome}
           /> */}
-            <Hero />
+            <Hero
+              currentLanguage={currentLanguage}
+              colorPoliceCanvas={colorPoliceCanvas}
+            />
+
             {
               /* <CurriculumVitae currentLanguage={currentLanguage} />
             <Projects />*/
