@@ -3,14 +3,11 @@ import InfoCard from './InfoCard/InfoCard';
 import { useState, useCallback, useEffect } from 'react';
 import DataFr from '../../Utils/Data-Fr.json';
 import DataEn from '../../Utils/Data-En.json';
-import PresentationTextHome from './PresentationTextHome/PresentationTextHome';
 import Hero from './Hero/Hero';
 import Dashboard from './Dashboard/Dashboard';
 import Languages from './Languages/Languages';
-import CurriculumVitae from './CurriculumVitae/CurriculumVitae';
 import Projects from './Projects/Projects';
 import Competency from './Competency/Competency';
-import MyJourney from './MyJourney/MyJourney';
 
 function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
   const [bubbleChatTextTab, setBubbleChatTextTab] = useState(DataFr.BubbleTab);
@@ -40,18 +37,7 @@ function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
       setBubbleChatTextTab(DataEn.BubbleTab);
     }
   }, [currentLanguage]);
-  useEffect(() => {
-    // eslint-disable-next-line
-    const timerId = setTimeout(() => {
-      // eslint-disable-next-line
-      // setCurrentComponent('2');
-      // eslint-disable-next-line
-    }, 8000);
-    // eslint-disable-next-line
 
-    return () => clearTimeout(timerId);
-    // eslint-disable-next-line
-  }, []);
   return (
     <div className="home">
       <Dashboard
@@ -73,31 +59,21 @@ function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
         toggleLanguage={toggleLanguage}
       />
       <div className="homeComponentsContainer">
-        {currentComponent === 'TextBackground' ? (
-          <p className="textBackground">FRONT END DEVELOPER</p>
-        ) : currentComponent === '2' ? (
-          <>
-            {/* <PresentationTextHome
-            handleCurrentComponent={handleCurrentComponent}
-            actifToggleStatusBubble={actifToggleStatusBubble}
-            textPresentation={DataFr.textHome}
-          /> */}
-            <Hero
-              currentLanguage={currentLanguage}
-              colorPoliceCanvas={colorPoliceCanvas}
-            />
-
-            {
-              /* <CurriculumVitae currentLanguage={currentLanguage} />
-            <Projects />*/
-              <Competency currentLanguage={currentLanguage} />
-            }
-          </>
-        ) : currentComponent === '2' ? null : currentComponent === // <CurriculumVitae currentLanguage={currentLanguage} />
-          '3' ? null : currentComponent === '4' ? null : currentComponent === // <Projects /> // <Competency currentLanguage={currentLanguage} />
-          '5' ? (
-          <MyJourney />
-        ) : null}
+        <section id="Home">
+          <Hero
+            currentLanguage={currentLanguage}
+            colorPoliceCanvas={colorPoliceCanvas}
+          />
+        </section>
+        <section id="Competency">
+          <Competency currentLanguage={currentLanguage} />
+        </section>
+        <section id="Project">
+          <Projects colorPoliceCanvas={colorPoliceCanvas} />
+        </section>
+        <section id="Contact">
+          <Projects colorPoliceCanvas={colorPoliceCanvas} />
+        </section>
       </div>
     </div>
   );

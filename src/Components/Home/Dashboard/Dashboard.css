@@ -8,6 +8,7 @@
     -moz-animation: dashborardfadein 1s ease-in;  
     -webkit-animation: dashborardfadein 1s ease-in;
     -o-animation: dashborardfadein 1s ease-in; 
+    z-index: 11;
 }
 
 @keyframes dashborardfadein {
@@ -100,14 +101,14 @@
   width: 100%;
   background: #00000087;
   border-radius: 25px;
+  text-transform: uppercase;
 }
 
 .ulNavBox li{
   width: 142px;
   text-align: center;
-  font-family: 'Alatsi';
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 
@@ -165,6 +166,17 @@
   text-decoration-thickness: 3px; */
   /* animation: gradiantColorNav 5s infinite; */
 /* } */
+
+.liNavAlt .actifNav1::after .active,.liNavAlt.actifNav2::after .active,.liNavAlt.actifNav3::after .active,.liNavAlt.actifNav4::after .active,.liNavAlt.actifNav5::after .active,.liNavAlt.actifNav6::after .active,.liNavAlt.actifNav7::after .active{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 22px;
+  width: 184px;
+  height: 3px; /* Épaisseur du soulignement */
+ /* Couleur du soulignement */
+  display: block;
+}
 
 .liNavAlt.actifNav1::after,.liNavAlt.actifNav2::after,.liNavAlt.actifNav3::after,.liNavAlt.actifNav4::after,.liNavAlt.actifNav5::after,.liNavAlt.actifNav6::after,.liNavAlt.actifNav7::after{
   content: "";
@@ -306,52 +318,8 @@
       }
     } 
 
-      
-    /* @keyframes gradiantColorNav {
-      from,
-      to {
-      color: hsl(28.235, 0.121, 0.898);
-      }
-      50% {
-      color: hsl(211, 100, 50);
-      }
-      100% {
-        color:  hsl(28.235, 0.121, 0.898);
-        }
-      }
-      @-moz-keyframes gradiantColorNav {
-        from,
-        to {
-          color: hsl(28.235, 0.121, 0.898);
-          }
-          50% {
-            color: hsl(211, 100, 50);
-          }
-          100% {
-            color:  hsl(28.235, 0.121, 0.898);
-            }
-      }
-      @-webkit-keyframes gradiantColorNav {
-        from,
-        to {
-          color: hsl(28.235, 0.121, 0.898);
-          }
-          50% {
-            color: hsl(211, 100, 50);
-          }
-          100% {
-            color:  hsl(28.235, 0.121, 0.898);
-            }
-      }
-      @-o-keyframes gradiantColorNav {
-        from,
-        to {
-          color: hsl(28.235, 0.121, 0.898);
-          }
-          50% {
-            color: hsl(211, 100, 50);
-          }
-          100% {
-            color:  hsl(28.235, 0.121, 0.898);
-            }
-      } */
+    a{
+      text-decoration: none;
+      color: rgb(236 228 222);
+      scroll-behavior: smooth;
+    }

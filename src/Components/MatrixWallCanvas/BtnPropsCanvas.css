@@ -9,6 +9,7 @@
   -moz-animation: cardfadein 2s; 
   -webkit-animation: cardfadein 2s; 
   -o-animation: cardfadein 2s;
+  z-index: 10;
 }
 
 .themesBox2 {
@@ -22,6 +23,7 @@
   -moz-animation: cardfadein 2s ease-in; 
   -webkit-animation: cardfadein 2s ease-in; 
   -o-animation: cardfadein 2s ease-in;
+  z-index: 10;
 }
 
 

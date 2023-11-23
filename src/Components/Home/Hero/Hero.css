@@ -1,6 +1,6 @@
 .heroContainer{
     width: 100%;
-    height: fit-content;
+    height: 165vh;
     animation: imgfadein 1s ease-in;
     -moz-animation: imgfadein 1s ease-in;  
     -webkit-animation: imgfadein 1s ease-in;  
@@ -18,7 +18,7 @@
 
 .heroBox2 {
     width: 100%;
-    height: 40vh;
+    margin: 6vh 0 4%;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -52,16 +52,213 @@
     letter-spacing: 2px;
 }
 
-.LogoTB{
-    width: 80px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1%;
+.boxH3Hero{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2.5%;
+  font-size: 20px;
+  color: #ece4de;
 }
+
+.boxPara{
+  width: 33%;
+}
+
+.h3HeroAlt1{
+  animation: colorWhiteFadeIn 3s ease-in infinite;
+  -moz-animation: colorWhiteFadeIn 3s ease-in infinite;  
+  -webkit-animation: colorWhiteFadeIn 3s ease-in infinite;
+  -o-animation: colorWhiteFadeIn 3s ease-in infinite; 
+}
+
+.spanAlt1{
+  color : #FE4760;
+}
+
+.spanAlt2{
+  color : #F76B15;
+}
+
+.spanAlt3{
+  color : #0F0;
+}
+
+.spanAlt4{
+  color : #007bff;
+}
+
+.spanAlt5{
+  color : #6f42c1;
+}
+
+@keyframes colorWhiteFadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes colorWhiteFadeIn { /* sur Firefox */
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes colorWhiteFadeIn { /* sur Safari et Chrome */
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes colorWhiteFadeIn { /* sur Opera */
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.h3HeroAlt2{
+  opacity: 0;
+  animation: colorWhiteFadeIn2 3s ease-in infinite;
+  -moz-animation: colorWhiteFadeIn2 3s ease-in infinite;  
+  -webkit-animation: colorWhiteFadeIn2 3s ease-in infinite;
+  -o-animation: colorWhiteFadeIn2 3s ease-in infinite; 
+}
+
+@keyframes colorWhiteFadeIn2 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes colorWhiteFadeIn2 { /* sur Firefox */
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes colorWhiteFadeIn2 { /* sur Safari et Chrome */
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes colorWhiteFadeIn2 { /* sur Opera */
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 
 .text1Hero,.text2Hero,.text3Hero,.h5Hero,.text4Hero {
     color: #ece4de;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .text1Hero{
@@ -69,53 +266,7 @@
     position: relative;
 }
 
-.text1Hero::before{
-    content: "";
-    width: 150px;
-    height: 6px;
-    position: absolute;
-    top: 14px;
-    right: 240px;
-    background: #ece4de;
-}
 
-.text1Hero::after {
-    content: "";
-    width: 150px;
-    height: 6px;
-    position: absolute;
-    top: 14px;
-    left: 240px;
-    background: #ece4de;
-}
-
-.textAltColor1::before,.textAltColor1::after {
-    background: #FE4760;
-}
-
-.textAltColor2::before,.textAltColor2::after {
-    background: #F76B15;
-}
-
-.textAltColor3::before,.textAltColor3::after {
-    background: #ffff62;
-}
-
-.textAltColor4::before,.textAltColor4::after {
-    background: #0F0;
-}
-
-.textAltColor5::before,.textAltColor5::after {
-    background: #007bff;
-}
-
-.textAltColor6::before,.textAltColor6::after {
-    background: #6f42c1;
-}
-
-.textAltColor7::before,.textAltColor7::after {
-    animation: gradiantColorNav 5s infinite;
-}
 
 .text2Hero{
     font-size: 45px;
@@ -264,3 +415,187 @@
             background-color: hsla(261, 51%, 51%, 0.308);
           }
     } 
+
+.loadHero{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20% 2%;
+}
+
+    .loader {
+      --path: #ece4de;
+      --dot: white;
+      --duration: 3s;
+      width: 44px;
+      height: 44px;
+      position: relative;
+    }
+    
+    .loader:before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      display: block;
+      background: var(--dot);
+      top: 37px;
+      left: 19px;
+      transform: translate(-18px, -18px);
+      animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    }
+    
+    .loader svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .loader svg rect, .loader svg polygon, .loader svg circle {
+      fill: none;
+      stroke: var(--path);
+      stroke-width: 10px;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+    
+    .loader svg polygon {
+      stroke-dasharray: 145 76 145 76;
+      stroke-dashoffset: 0;
+      animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    }
+    
+    .loader svg rect {
+      stroke-dasharray: 192 64 192 64;
+      stroke-dashoffset: 0;
+      animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    }
+    
+    .loader svg circle {
+      stroke-dasharray: 150 50 150 50;
+      stroke-dashoffset: 75;
+      animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    }
+    
+    .loader.triangle {
+      width: 48px;
+    }
+    
+    .loader.triangle:before {
+      left: 21px;
+      transform: translate(-10px, -18px);
+      animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    }
+    
+    @keyframes pathTriangle {
+      33% {
+        stroke-dashoffset: 74;
+      }
+    
+      66% {
+        stroke-dashoffset: 147;
+      }
+    
+      100% {
+        stroke-dashoffset: 221;
+      }
+    }
+    
+    @keyframes dotTriangle {
+      33% {
+        transform: translate(0, 0);
+      }
+    
+      66% {
+        transform: translate(10px, -18px);
+      }
+    
+      100% {
+        transform: translate(-10px, -18px);
+      }
+    }
+    
+    @keyframes pathRect {
+      25% {
+        stroke-dashoffset: 64;
+      }
+    
+      50% {
+        stroke-dashoffset: 128;
+      }
+    
+      75% {
+        stroke-dashoffset: 192;
+      }
+    
+      100% {
+        stroke-dashoffset: 256;
+      }
+    }
+    
+    @keyframes dotRect {
+      25% {
+        transform: translate(0, 0);
+      }
+    
+      50% {
+        transform: translate(18px, -18px);
+      }
+    
+      75% {
+        transform: translate(0, -36px);
+      }
+    
+      100% {
+        transform: translate(-18px, -18px);
+      }
+    }
+    
+    @keyframes pathCircle {
+      25% {
+        stroke-dashoffset: 125;
+      }
+    
+      50% {
+        stroke-dashoffset: 175;
+      }
+    
+      75% {
+        stroke-dashoffset: 225;
+      }
+    
+      100% {
+        stroke-dashoffset: 275;
+      }
+    }
+    
+    .loader {
+      display: inline-block;
+      margin: 0 16px;
+    }
+    
+     
+    .loaderAlt{
+      margin-bottom: 4%;
+    }
+
+    .loadAlt1{
+      --path : #FE4760;
+    }
+    
+    .loadAlt2{
+      --path : #F76B15;
+    }
+    
+    .loadAlt3{
+      --path : #0F0;
+    }
+    
+    .loadAlt4{
+      --path : #007bff;
+    }
+    
+    .loadAlt5{
+      --path : #6f42c1;
+    }

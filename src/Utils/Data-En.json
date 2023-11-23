@@ -1,40 +1,39 @@
 {
-    "BubbleTab": [
+  "BubbleTab": [
       {
         "id": "1",
-        "text": "Email copied !",
+        "text": "The email is copied!",
         "msgTime": "6",
         "status": false
       },
       {
         "id": "2",
-        "text": "Curriculum vitæ ! ",
-        "citation": "« Labor omnia vincit improbus »",
+        "text": "Welcome!",
+        "citation": "My name is Thomas, pleased to meet you 😉.",
         "msgTime": "6",
         "status": false
       },
       {
         "id": "3",
-        "text": "My different projects are grouped here.",
+        "text": "Some of my projects 😇",
         "msgTime": "6",
         "status": false
       },
       {
         "id": "4",
-        "text": "Some of my skills.. ",
-        "citation": "I could not put everything, I had no more room 😅.",
+        "text": "My skills 😎..😎",
         "msgTime": "6",
         "status": false
       },
       {
         "id": "5",
-        "text": "This is my personal art gallery !",
+        "text": "Feel free to ask! 😄",
         "msgTime": "6",
         "status": false
       },
       {
         "id": "6",
-        "text": "CV uploaded !",
+        "text": "The CV is downloaded!",
         "msgTime": "6",
         "status": false
       }
@@ -64,18 +63,6 @@
       {
         "color": "#6f42c1",
         "text": "Purple"
-      },
-      {
-        "color": [
-          "#FE4760",
-          "#ffc107",
-          "#ffff62",
-          "#0F0",
-          "#007bff",
-          "#6f42c1",
-          "white"
-        ],
-        "text": "All"
       }
     ],
     "PoliceTabMatrixWall": [

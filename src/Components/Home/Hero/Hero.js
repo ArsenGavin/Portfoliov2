@@ -1,8 +1,4 @@
 import './Hero.css';
-import { TypeAnimation } from 'react-type-animation';
-import { IoIosSpeedometer } from 'react-icons/io';
-import { MdComputer } from 'react-icons/md';
-import { RiHomeWifiLine } from 'react-icons/ri';
 import DataFr from '../../../Utils/Data-Fr.json';
 import DataEn from '../../../Utils/Data-En.json';
 
@@ -20,37 +16,94 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
             ? DataFr.heroText.textH3
             : DataEn.heroText.textH3}
         </h3>
-
-        <TypeAnimation
-          sequence={[
-            // Same substring at the start will only be typed out once, initially
-            'Web',
-            1000,
-            'JavaScript',
-            1000,
-            'React',
-            1000,
-            'Web App',
-            1000,
-            'Front-End',
-            1000,
-          ]}
-          wrapper="span"
-          speed={30}
-          style={{
-            fontSize: '2em',
-            display: 'inline-block',
-            marginTop: '30px',
-            color: '#ece4de',
-            whiteSpace: 'pre-line',
-            fontWeight: 'bold',
-            wordBreak: 'break-all',
-            userSelect: 'none',
-          }}
-          repeat={Infinity}
-        />
+        <div className="boxH3Hero">
+          <h3 className="h3HeroAlt1">
+            <span
+              className={`${
+                colorPoliceCanvas === '#FE4760'
+                  ? 'spanAlt1'
+                  : colorPoliceCanvas === '#F76B15'
+                  ? 'spanAlt2'
+                  : colorPoliceCanvas === '#0F0'
+                  ? 'spanAlt3'
+                  : colorPoliceCanvas === '#007bff'
+                  ? 'spanAlt4'
+                  : colorPoliceCanvas === '#6f42c1'
+                  ? 'spanAlt5'
+                  : ''
+              }`}
+            >
+              W
+            </span>
+            eb
+          </h3>
+          <h3 className="h3HeroAlt2">
+            {currentLanguage === 'FR' ? 'Intégration' : 'Integration'}
+          </h3>
+          <h3 className="h3HeroAlt1">
+            <span
+              className={`${
+                colorPoliceCanvas === '#FE4760'
+                  ? 'spanAlt1'
+                  : colorPoliceCanvas === '#F76B15'
+                  ? 'spanAlt2'
+                  : colorPoliceCanvas === '#0F0'
+                  ? 'spanAlt3'
+                  : colorPoliceCanvas === '#007bff'
+                  ? 'spanAlt4'
+                  : colorPoliceCanvas === '#6f42c1'
+                  ? 'spanAlt5'
+                  : ''
+              }`}
+            >
+              J
+            </span>
+            avaScript
+          </h3>
+          <h3 className="h3HeroAlt2">React</h3>
+          <h3 className="h3HeroAlt1">
+            <span
+              className={`${
+                colorPoliceCanvas === '#FE4760'
+                  ? 'spanAlt1'
+                  : colorPoliceCanvas === '#F76B15'
+                  ? 'spanAlt2'
+                  : colorPoliceCanvas === '#0F0'
+                  ? 'spanAlt3'
+                  : colorPoliceCanvas === '#007bff'
+                  ? 'spanAlt4'
+                  : colorPoliceCanvas === '#6f42c1'
+                  ? 'spanAlt5'
+                  : ''
+              }`}
+            >
+              W
+            </span>
+            eb App
+          </h3>
+          <h3 className="h3HeroAlt2">Front-End</h3>
+        </div>
       </div>
       <div className="heroBox2">
+        <div
+          className={`loader triangle loaderAlt ${
+            colorPoliceCanvas === '#FE4760'
+              ? 'loadAlt1'
+              : colorPoliceCanvas === '#F76B15'
+              ? 'loadAlt2'
+              : colorPoliceCanvas === '#0F0'
+              ? 'loadAlt3'
+              : colorPoliceCanvas === '#007bff'
+              ? 'loadAlt4'
+              : colorPoliceCanvas === '#6f42c1'
+              ? 'loadAlt5'
+              : ''
+          }`}
+        >
+          <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+          </svg>
+        </div>
         <p
           className={`text1Hero ${
             colorPoliceCanvas === '#FE4760'
@@ -85,29 +138,69 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
             : DataEn.heroText.textP3}
         </p>
       </div>
+      <div className="loadHero">
+        <div
+          className={`loader ${
+            colorPoliceCanvas === '#FE4760'
+              ? 'loadAlt1'
+              : colorPoliceCanvas === '#F76B15'
+              ? 'loadAlt2'
+              : colorPoliceCanvas === '#0F0'
+              ? 'loadAlt3'
+              : colorPoliceCanvas === '#007bff'
+              ? 'loadAlt4'
+              : colorPoliceCanvas === '#6f42c1'
+              ? 'loadAlt5'
+              : ''
+          }`}
+        >
+          <svg viewBox="0 0 80 80">
+            <rect x="8" y="8" width="64" height="64"></rect>
+          </svg>
+        </div>
+        <div
+          className={`loader ${
+            colorPoliceCanvas === '#FE4760'
+              ? 'loadAlt1'
+              : colorPoliceCanvas === '#F76B15'
+              ? 'loadAlt2'
+              : colorPoliceCanvas === '#0F0'
+              ? 'loadAlt3'
+              : colorPoliceCanvas === '#007bff'
+              ? 'loadAlt4'
+              : colorPoliceCanvas === '#6f42c1'
+              ? 'loadAlt5'
+              : ''
+          }`}
+        >
+          <svg viewBox="0 0 80 80">
+            <circle id="test" cx="40" cy="40" r="32"></circle>
+          </svg>
+        </div>
+
+        <div
+          className={`loader ${
+            colorPoliceCanvas === '#FE4760'
+              ? 'loadAlt1'
+              : colorPoliceCanvas === '#F76B15'
+              ? 'loadAlt2'
+              : colorPoliceCanvas === '#0F0'
+              ? 'loadAlt3'
+              : colorPoliceCanvas === '#007bff'
+              ? 'loadAlt4'
+              : colorPoliceCanvas === '#6f42c1'
+              ? 'loadAlt5'
+              : ''
+          }`}
+        >
+          <svg viewBox="0 0 80 80">
+            <rect x="8" y="8" width="64" height="64"></rect>
+          </svg>
+        </div>
+      </div>
+
       <div className="heroBox3">
         <div className="boxPara">
-          <div
-            className={`boxIconPara ${
-              colorPoliceCanvas === '#FE4760'
-                ? 'boxIconPara1'
-                : colorPoliceCanvas === '#F76B15'
-                ? 'boxIconPara2'
-                : colorPoliceCanvas === '#ffff62'
-                ? 'boxIconPara3'
-                : colorPoliceCanvas === '#0F0'
-                ? 'boxIconPara4'
-                : colorPoliceCanvas === '#007bff'
-                ? 'boxIconPara5'
-                : colorPoliceCanvas === '#6f42c1'
-                ? 'boxIconPara6'
-                : Array.isArray(colorPoliceCanvas)
-                ? 'boxIconPara7'
-                : ''
-            }`}
-          >
-            <IoIosSpeedometer className="iconHero" />
-          </div>
           <h5 className="h5Hero">
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[0].title
@@ -120,27 +213,6 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
           </p>
         </div>
         <div className="boxPara">
-          <div
-            className={`boxIconPara ${
-              colorPoliceCanvas === '#FE4760'
-                ? 'boxIconPara1'
-                : colorPoliceCanvas === '#F76B15'
-                ? 'boxIconPara2'
-                : colorPoliceCanvas === '#ffff62'
-                ? 'boxIconPara3'
-                : colorPoliceCanvas === '#0F0'
-                ? 'boxIconPara4'
-                : colorPoliceCanvas === '#007bff'
-                ? 'boxIconPara5'
-                : colorPoliceCanvas === '#6f42c1'
-                ? 'boxIconPara6'
-                : Array.isArray(colorPoliceCanvas)
-                ? 'boxIconPara7'
-                : ''
-            }`}
-          >
-            <MdComputer className="iconHero" />
-          </div>
           <h5 className="h5Hero">
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[1].title
@@ -153,27 +225,6 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
           </p>
         </div>
         <div className="boxPara cards">
-          <div
-            className={`boxIconPara ${
-              colorPoliceCanvas === '#FE4760'
-                ? 'boxIconPara1'
-                : colorPoliceCanvas === '#F76B15'
-                ? 'boxIconPara2'
-                : colorPoliceCanvas === '#ffff62'
-                ? 'boxIconPara3'
-                : colorPoliceCanvas === '#0F0'
-                ? 'boxIconPara4'
-                : colorPoliceCanvas === '#007bff'
-                ? 'boxIconPara5'
-                : colorPoliceCanvas === '#6f42c1'
-                ? 'boxIconPara6'
-                : Array.isArray(colorPoliceCanvas)
-                ? 'boxIconPara7'
-                : ''
-            }`}
-          >
-            <RiHomeWifiLine className="iconHero" />
-          </div>
           <h5 className="h5Hero">
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[2].title

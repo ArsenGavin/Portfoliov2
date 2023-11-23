@@ -8,27 +8,26 @@
       },
       {
         "id": "2",
-        "text": "Curriculum vitæ ! ",
-        "citation": "« Labor omnia vincit improbus »",
+        "text": "Bienvenue !",
+        "citation": "Je m'appelle Thomas enchanté 😉.",
         "msgTime": "6",
         "status": false
       },
       {
         "id": "3",
-        "text": "Mes différents projets sont regroupés ici.",
+        "text": "Certain de mes projets 😇",
         "msgTime": "6",
         "status": false
       },
       {
         "id": "4",
-        "text": "Certain de mes skills.. ",
-        "citation": "Je ne pouvais pas tout mettre, je n'avais plus de place 😅 .",
+        "text": "Mes skills 😎..😎",
         "msgTime": "6",
         "status": false
       },
       {
         "id": "5",
-        "text": "C'est ma galerie d'art perso !",
+        "text": "N'hésite surtout pas ! 😄",
         "msgTime": "6",
         "status": false
       },
@@ -64,18 +63,6 @@
       {
         "color": "#6f42c1",
         "text": "Violet"
-      },
-      {
-        "color": [
-          "#FE4760",
-          "#ffc107",
-          "#ffff62",
-          "#0F0",
-          "#007bff",
-          "#6f42c1",
-          "white"
-        ],
-        "text": "All"
       }
     ],
     "PoliceTabMatrixWall": [

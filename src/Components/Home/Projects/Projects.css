@@ -1,78 +1,117 @@
-.ProjectContainer {
-    width: 65vw;
-    height: -moz-fit-content;
-    height: fit-content;
-    background: rgb(236 228 222);
-    /* position: fixed; */
-    top: 20%;
-    left: 3%;
-    padding: 0 2% 2%;
-    border-radius: 20px;
-    border: 4px;
-    overflow: auto;
-    animation: fadeIn 2s ease-in;
+.projectContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    /* margin-bottom: 35vh; */
+    height: 100vh;
 }
 
-@keyframes fadeIn {
-    from,
-      to {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.cardProject {
+    position: relative;
+    width: 253px;
+    height: 338px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 6;
+  }
+  
+  .cardProject::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 266px;
+    height: 352px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #FFF394 0%, #40c9ff 100% );
+    z-index: 4;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .cardProject::after {
+    content: "";
+    z-index: 4;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #FFF394 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
   }
 
-.itemProject {
-    text-align: center;
-    width: 93%;
-}
 
-.itemProject h3 {
-    margin: 3% 0 2%;
-    font-size: 2em;
-}
+  .cardProject1::before {
+    background: linear-gradient(-45deg, #FE4760 0%, #ece4de 100% );
+  }
+  
+  .cardProject1::after {
+    background: linear-gradient(-45deg, #FE4760 0%, #ece4de 100% );
+  }
 
-.titleGitItemProject {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 2%;
-}
+  .cardProject2::before {
+    background: linear-gradient(-45deg, #F76B15 0%, #ece4de 100% );
+  }
+  
+  .cardProject2::after {
+    background: linear-gradient(-45deg, #F76B15 0%, #ece4de 100% );
+  }
 
-.itemProject p {
-    /* text-align: left; */
-    font-weight: 500;
+  .cardProject3::before {
+    background: linear-gradient(-45deg, #0F0 0%, #ece4de 100% );
+  }
+  
+  .cardProject3::after {
+    background: linear-gradient(-45deg, #0F0 0%, #ece4de 100% );
+  }
+
+  .cardProject4::before {
+    background: linear-gradient(-45deg, #007bff 0%, #ece4de 100% );
+  }
+  
+  .cardProject4::after {
+    background: linear-gradient(-45deg, #007bff 0%, #ece4de 100% );
+  }
+
+  .cardProject5::before {
+    background: linear-gradient(-45deg, #6f42c1 0%, #ece4de 100% );
+  }
+  
+  .cardProject5::after {
+    background: linear-gradient(-45deg, #6f42c1 0%, #ece4de 100% );
+  }
+  
+  .heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    z-index: 5;
+  }
+  
+  .cardProject p:not(.heading) {
+    font-size: 14px;
+    z-index: 5;
+  }
+  
+  .cardProject p:last-child {
     color: black;
-    margin: 1% 0;
-}
-
-.itemProject p {
-    /* text-align: left; */
-    /*test*/
-    font-weight: 500;
-    color: black;
-    margin: 1% 0;
-}
-
-.descriptifItem {
-    width: 100%;
-    padding: 0 20%;
-    margin: auto;
-    text-align: left;
-}
-
-.cryptoImg , .epicRoadTripImg {
-    width: 60%;
-    height: auto;
-    text-align: center;
-    margin: 1% 0;
-}
-
-.myYakImg {
-    width: 15%;
-    height: auto;
-    text-align: center;
-    margin: 4% 0 2%;
-    border-radius: 25px;
-}
+    font-weight: 600;
+    z-index: 7;
+  }
+  
+  .cardProject:hover::after {
+    filter: blur(30px);
+    z-index: 4;
+  }
+  
+  .cardProject:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+    z-index: 4;
+  }
