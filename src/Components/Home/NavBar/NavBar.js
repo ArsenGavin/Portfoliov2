@@ -1,10 +1,10 @@
-import './Dashboard.css';
+import './NavBar.css';
 import DataFr from '../../../Utils/Data-Fr.json';
 import DataEn from '../../../Utils/Data-En.json';
 import imgLogo from '../../../img/imgLogo.png';
 import { Link } from 'react-scroll';
 
-function Dashboard({
+function NavBar({
   actifToggleStatusBubble,
   cleanStatusBubble,
   handleCurrentComponent,
@@ -25,8 +25,11 @@ function Dashboard({
             to="Home"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-50}
             duration={500}
+            onSetActive={() => {
+              handleClick('2');
+            }}
             onClick={() => {
               handleClick('2');
             }}
@@ -57,8 +60,11 @@ function Dashboard({
             to="Competency"
             spy={true}
             smooth={true}
-            offset={180}
+            offset={-50}
             duration={500}
+            onSetActive={() => {
+              handleClick('4');
+            }}
             onClick={() => {
               handleClick('4');
             }}
@@ -90,8 +96,11 @@ function Dashboard({
             to="Project"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={0}
             duration={500}
+            onSetActive={() => {
+              handleClick('3');
+            }}
             onClick={() => {
               handleClick('3');
             }}
@@ -123,8 +132,11 @@ function Dashboard({
             to="Contact"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={0}
             duration={500}
+            onSetActive={() => {
+              handleClick('5');
+            }}
             onClick={() => {
               handleClick('5');
             }}
@@ -156,4 +168,4 @@ function Dashboard({
   );
 }
 
-export default Dashboard;
+export default NavBar;

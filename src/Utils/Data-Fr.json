@@ -11,7 +11,7 @@
         "text": "Bienvenue !",
         "citation": "Je m'appelle Thomas enchanté 😉.",
         "msgTime": "6",
-        "status": false
+        "status": true
       },
       {
         "id": "3",
@@ -27,7 +27,7 @@
       },
       {
         "id": "5",
-        "text": "N'hésite surtout pas ! 😄",
+        "text": "N'hésitez surtout pas ! 😄",
         "msgTime": "6",
         "status": false
       },

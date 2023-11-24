@@ -9,6 +9,7 @@
     -moz-animation: imgfadein 2s ease-in;  
     -webkit-animation: imgfadein 2s ease-in;  
     -o-animation: imgfadein 2s ease-in; 
+    z-index: 10;
 }
 
 .btnLanguage {
@@ -25,3 +26,11 @@
     color:black;
     background-color: rgb(236 228 222);
 }
+
+@media only screen and (max-width: 480px) {
+    /* Styles spécifiques pour les smartphones en mode portrait */
+
+    .languagesContainer {
+        top: 60px;
+    }
+  }

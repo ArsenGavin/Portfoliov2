@@ -1,6 +1,9 @@
-.home {
-    /* display: flex; */
-    /* height: 100vh; */
+#Home{
+  height: 200vh;
+}
+
+#Competency, #Project, #Contact {
+    height: 100vh;
 }
 
 .homeComponentsContainer {
@@ -59,4 +62,34 @@
       100% {
         opacity: 0;
     }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    /* Styles spécifiques pour les tablettes en mode portrait */
+    .homeComponentsContainer {
+      margin: 0% 0 2% 23%;
+    }
+
+    #Home {
+      height: 175vh;
+  }
+
+    #Project{
+      height: 110vh;
+      padding-top: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    /* Styles à appliquer uniquement aux mobiles en mode paysage */
+    .homeComponentsContainer {
+      margin: 0% 0 2% 0;
+    }
+
+    #Competency, #Contact {
+      height: 100vh;
+  }
+  #Project{
+    height: 200vh;
+  }
   }

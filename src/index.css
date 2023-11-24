@@ -24,6 +24,25 @@ body {
   scroll-behavior: smooth;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Styles spécifiques pour les tablettes en mode portrait */
+  body {
+    /* Exemple : bloquer le défilement horizontal */
+    overflow-x: hidden;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  /* Styles à appliquer uniquement aux mobiles en mode paysage */
+  body {
+    /* Exemple : bloquer le défilement horizontal */
+    overflow-x: hidden;
+  }
+
+  /* Ajoutez d'autres styles selon vos besoins */
+}
+
 section {
   scroll-behavior: smooth;
   height: fit-content;
@@ -64,4 +83,3 @@ code {
   width: 100vw;
   height: 100vh;
 }
-

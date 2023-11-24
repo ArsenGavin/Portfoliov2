@@ -97,7 +97,8 @@
 .ulNavBox {
   display: flex;
   justify-content: space-around;
-  margin: 2% 2%;
+  align-items: center;
+  margin: 10px 10px;
   width: 100%;
   background: #00000087;
   border-radius: 25px;
@@ -115,14 +116,13 @@
 .liNav2,.liNav3, .liNav4,.liNavAlt {
     color: rgb(236 228 222);
     text-align: center;
-    margin: 2% 4%;
     width: fit-content;
     height: fit-content;
     user-select: none;
 }
 
 .imgBoxUl{
-  margin: 0 4%;
+  margin: 0 2%;
 }
 
 .imgBoxUl:hover,.liNav2:hover,.liNav3:hover,.liNav4:hover{
@@ -322,4 +322,21 @@
       text-decoration: none;
       color: rgb(236 228 222);
       scroll-behavior: smooth;
+    }
+
+    @media only screen and (max-width: 480px) {
+      /* Styles spécifiques pour les smartphones en mode portrait */
+      .dashboardContainer {
+        position: fixed;
+        top: 25px;
+        left: 45%;
+        width: 100%;
+      }
+      .ulNavBox li {
+        font-size: 10px;
+      }
+      
+      .liNavAlt.actifNav1::after, .liNavAlt.actifNav2::after, .liNavAlt.actifNav3::after, .liNavAlt.actifNav4::after, .liNavAlt.actifNav5::after, .liNavAlt.actifNav6::after, .liNavAlt.actifNav7::after {
+        width: 85px;
+      }
     }

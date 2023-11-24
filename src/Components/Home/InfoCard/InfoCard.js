@@ -2,12 +2,7 @@ import './InfoCard.css';
 import BubbleChat from './BubbleChat/BubbleChat';
 import CV from '../../../doc/Thomas Birmingham CV 2023.pdf';
 import { LuFileSpreadsheet } from 'react-icons/lu';
-import {
-  AiOutlineHome,
-  AiOutlineLinkedin,
-  AiOutlineMail,
-  AiFillGithub,
-} from 'react-icons/ai';
+import { AiOutlineLinkedin, AiFillGithub } from 'react-icons/ai';
 import { BsEnvelopeAt } from 'react-icons/bs';
 import DataFr from '../../../Utils/Data-Fr.json';
 import DataEn from '../../../Utils/Data-En.json';
@@ -76,18 +71,17 @@ function PresentationCard({
               openWebOnglet('https://github.com/ArsenGavin');
             }}
           />
-          <h5>
-            <a
-              href={CV}
-              onClick={() => {
-                dlCV();
-              }}
-              download="Thomas Birmingham CV 2023.pdf" // Nom du fichier à télécharger
-              alt="CV Thomas Birmingham"
-            >
-              <LuFileSpreadsheet className="icon iconCV" />
-            </a>
-          </h5>
+          <a
+            href={CV}
+            onClick={() => {
+              dlCV();
+            }}
+            download="Thomas Birmingham CV 2023.pdf" // Nom du fichier à télécharger
+            alt="CV Thomas Birmingham"
+            className="aIcon"
+          >
+            <LuFileSpreadsheet className="icon iconCV" />
+          </a>
           <BsEnvelopeAt
             onClick={() => {
               copyText(infoCard[1].text);
@@ -95,7 +89,7 @@ function PresentationCard({
             onKeyDown={() => {
               copyText(infoCard[1].text);
             }}
-            className="icon iconCV"
+            className="icon "
           />
         </div>
         <div className="infoCardBox">

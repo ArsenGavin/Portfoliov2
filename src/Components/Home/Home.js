@@ -4,14 +4,14 @@ import { useState, useCallback, useEffect } from 'react';
 import DataFr from '../../Utils/Data-Fr.json';
 import DataEn from '../../Utils/Data-En.json';
 import Hero from './Hero/Hero';
-import Dashboard from './Dashboard/Dashboard';
+import NavBar from './NavBar/NavBar';
 import Languages from './Languages/Languages';
 import Projects from './Projects/Projects';
 import Competency from './Competency/Competency';
+import ContactForm from './ContactForm/ContactForm';
 
 function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
   const [bubbleChatTextTab, setBubbleChatTextTab] = useState(DataFr.BubbleTab);
-  // const [currentComponent, setCurrentComponent] = useState('TextBackground');
   const [currentComponent, setCurrentComponent] = useState('2');
   const cleanStatusBubble = useCallback(() => {
     setBubbleChatTextTab((prevArray) =>
@@ -40,7 +40,7 @@ function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
 
   return (
     <div className="home">
-      <Dashboard
+      <NavBar
         actifToggleStatusBubble={actifToggleStatusBubble}
         cleanStatusBubble={cleanStatusBubble}
         handleCurrentComponent={handleCurrentComponent}
@@ -72,7 +72,10 @@ function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
           <Projects colorPoliceCanvas={colorPoliceCanvas} />
         </section>
         <section id="Contact">
-          <Projects colorPoliceCanvas={colorPoliceCanvas} />
+          <ContactForm
+            currentLanguage={currentLanguage}
+            colorPoliceCanvas={colorPoliceCanvas}
+          />
         </section>
       </div>
     </div>

@@ -169,14 +169,26 @@
   } */
 
 
-  /* @media only screen and (max-width : 1175px) {
-    .themesBox2 {
-      position: fixed;
-      top: 8%;
-      right: 2%;
-      width: min-content;
-      display: flex;
-      justify-content: space-between;
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+    /* Styles spécifiques pour les tablettes en mode portrait */
+    .themesBox1{
+      left: 1%;
+      bottom:4%;
+      width: 25%;
     }
-  
-  } */
+    .themesBox2{
+      left: 1%;
+      bottom: 1%;
+      width: 25%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    /* Styles à appliquer uniquement aux mobiles en mode paysage */
+    .themesBox1{
+      display: none;
+    }
+    .themesBox2{
+      display: none;
+    }
+  }

@@ -61,15 +61,16 @@
   color: #ece4de;
 }
 
+
 .boxPara{
   width: 33%;
 }
 
 .h3HeroAlt1{
-  animation: colorWhiteFadeIn 3s ease-in infinite;
-  -moz-animation: colorWhiteFadeIn 3s ease-in infinite;  
-  -webkit-animation: colorWhiteFadeIn 3s ease-in infinite;
-  -o-animation: colorWhiteFadeIn 3s ease-in infinite; 
+  animation: colorWhiteFadeIn 4s ease-in infinite;
+  -moz-animation: colorWhiteFadeIn 4s ease-in infinite;  
+  -webkit-animation: colorWhiteFadeIn 4s ease-in infinite;
+  -o-animation: colorWhiteFadeIn 4s ease-in infinite; 
 }
 
 .spanAlt1{
@@ -171,10 +172,10 @@
 
 .h3HeroAlt2{
   opacity: 0;
-  animation: colorWhiteFadeIn2 3s ease-in infinite;
-  -moz-animation: colorWhiteFadeIn2 3s ease-in infinite;  
-  -webkit-animation: colorWhiteFadeIn2 3s ease-in infinite;
-  -o-animation: colorWhiteFadeIn2 3s ease-in infinite; 
+  animation: colorWhiteFadeIn2 4s ease-in infinite;
+  -moz-animation: colorWhiteFadeIn2 4s ease-in infinite;  
+  -webkit-animation: colorWhiteFadeIn2 4s ease-in infinite;
+  -o-animation: colorWhiteFadeIn2 4s ease-in infinite; 
 }
 
 @keyframes colorWhiteFadeIn2 {
@@ -599,3 +600,44 @@
     .loadAlt5{
       --path : #6f42c1;
     }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+    .heroBox1 {
+      height: 100vh;
+      margin-left: -14%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    /* Styles à appliquer uniquement aux mobiles en mode paysage */
+    .heroBox1 {
+      height: 50m;
+      margin-left: 0;
+    }
+    .h2Hero {
+      font-size: 20px;
+    }
+    .h3Hero {
+      font-size: 22px;
+    }
+
+    .h3HeroAlt1, .h3HeroAlt2 {
+      font-size: 12px;
+    }
+
+    .text1Hero {
+      font-size: 22px;
+    }
+    .text2Hero {
+      font-size: 25px;
+    }
+    .text3Hero {
+      font-size: 20px;
+    }
+    .h5Hero{
+      font-size: 15px;
+    }
+    .text4Hero {
+      font-size: 9px;
+    }
+  }
