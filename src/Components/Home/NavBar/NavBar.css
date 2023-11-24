@@ -3,7 +3,7 @@
     top: 40px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 755px;  
+    width: 800px;  
     animation: dashborardfadein 1s ease-in;
     -moz-animation: dashborardfadein 1s ease-in;  
     -webkit-animation: dashborardfadein 1s ease-in;
@@ -106,7 +106,7 @@
 }
 
 .ulNavBox li{
-  width: 142px;
+  width: 25%;
   text-align: center;
   font-weight: 400;
   font-size: 14px;
@@ -171,8 +171,8 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 22px;
-  width: 184px;
+  left: 0;
+  width: 25%;
   height: 3px; /* Épaisseur du soulignement */
  /* Couleur du soulignement */
   display: block;
@@ -182,8 +182,8 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 22px;
-  width: 184px;
+  left: 0;
+  width: 25%;
   height: 3px; /* Épaisseur du soulignement */
  /* Couleur du soulignement */
   display: block;
@@ -192,8 +192,8 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 205px;
-  width: 188px;
+  left: 25%;
+  width: 25%;
   height: 3px;
   background-color: #007bff;
   display: block;
@@ -203,8 +203,8 @@
   content: "";
   position: absolute;
   bottom: 0;
-  right: 172px;
-  width: 190px;
+  right: 25%;
+  width: 25%;
   height: 3px;
   background-color: #007bff;
   display: block;
@@ -214,8 +214,8 @@
   content: "";
   position: absolute;
   bottom: 0;
-  right: -16px;
-  width: 188px;
+  right: 0;
+  width: 25%;
   height: 3px;
   background-color: #007bff;
   display: block;
@@ -328,26 +328,12 @@
       /* Styles spécifiques pour les smartphones en mode portrait */
       .dashboardContainer {
         position: fixed;
-        top: 25px;
-        left: 45%;
+        top: 0;
+        left: 0;
         width: 100%;
+        transform: translate(0 ,0);
       }
       .ulNavBox li {
         font-size: 10px;
-      }
-      
-      .liNavAlt.actifNav1::after, .liNavAlt.actifNav2::after, .liNavAlt.actifNav3::after, .liNavAlt.actifNav4::after, .liNavAlt.actifNav5::after, .liNavAlt.actifNav6::after, .liNavAlt.actifNav7::after {
-        width: 85px;
-      }
-      .liNav2.actifNav1::after, .liNav2.actifNav2::after, .liNav2.actifNav3::after, .liNav2.actifNav4::after, .liNav2.actifNav5::after, .liNav2.actifNav6::after, .liNav2.actifNav7::after {
-        left: 104px;
-        width: 130px;    
-      }
-      .liNav3.actifNav1::after, .liNav3.actifNav2::after, .liNav3.actifNav3::after, .liNav3.actifNav4::after, .liNav3.actifNav5::after, .liNav3.actifNav6::after, .liNav3.actifNav7::after {
-        width: 95px;
-        right: 103px;
-      }
-      .liNav4.actifNav1::after, .liNav4.actifNav2::after, .liNav4.actifNav3::after, .liNav4.actifNav4::after, .liNav4.actifNav5::after, .liNav4.actifNav6::after, .liNav4.actifNav7::after {
-        width: 104px;
       }
   }
