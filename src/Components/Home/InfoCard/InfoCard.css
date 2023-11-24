@@ -107,8 +107,6 @@
     font-family: 'Alatsi';
     font-weight: 400;
     user-select: none;
-    /* -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: white; */
 }
 .titleCard::after {
     content:"_";
