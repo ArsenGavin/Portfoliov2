@@ -640,4 +640,11 @@
     .text4Hero {
       font-size: 9px;
     }
+    .heroBox3 {
+      text-align: center;
+      flex-direction: column;
+    }
+    .boxPara {
+      width: 100%;
+    }
   }

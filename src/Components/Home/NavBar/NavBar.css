@@ -339,4 +339,15 @@
       .liNavAlt.actifNav1::after, .liNavAlt.actifNav2::after, .liNavAlt.actifNav3::after, .liNavAlt.actifNav4::after, .liNavAlt.actifNav5::after, .liNavAlt.actifNav6::after, .liNavAlt.actifNav7::after {
         width: 85px;
       }
-    }
+      .liNav2.actifNav1::after, .liNav2.actifNav2::after, .liNav2.actifNav3::after, .liNav2.actifNav4::after, .liNav2.actifNav5::after, .liNav2.actifNav6::after, .liNav2.actifNav7::after {
+        left: 104px;
+        width: 130px;    
+      }
+      .liNav3.actifNav1::after, .liNav3.actifNav2::after, .liNav3.actifNav3::after, .liNav3.actifNav4::after, .liNav3.actifNav5::after, .liNav3.actifNav6::after, .liNav3.actifNav7::after {
+        width: 95px;
+        right: 103px;
+      }
+      .liNav4.actifNav1::after, .liNav4.actifNav2::after, .liNav4.actifNav3::after, .liNav4.actifNav4::after, .liNav4.actifNav5::after, .liNav4.actifNav6::after, .liNav4.actifNav7::after {
+        width: 104px;
+      }
+  }

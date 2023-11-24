@@ -86,10 +86,13 @@
       margin: 0% 0 2% 0;
     }
 
-    #Competency, #Contact {
+    #Contact {
       height: 100vh;
-  }
-  #Project{
-    height: 200vh;
-  }
+    }
+    #Competency{
+      height: 120vh;
+    }
+    #Project{
+      height: 200vh;
+    }
   }

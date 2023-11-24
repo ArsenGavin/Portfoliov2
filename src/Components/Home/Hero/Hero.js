@@ -138,69 +138,27 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
             : DataEn.heroText.textP3}
         </p>
       </div>
-      <div className="loadHero">
-        <div
-          className={`loader ${
-            colorPoliceCanvas === '#FE4760'
-              ? 'loadAlt1'
-              : colorPoliceCanvas === '#F76B15'
-              ? 'loadAlt2'
-              : colorPoliceCanvas === '#0F0'
-              ? 'loadAlt3'
-              : colorPoliceCanvas === '#007bff'
-              ? 'loadAlt4'
-              : colorPoliceCanvas === '#6f42c1'
-              ? 'loadAlt5'
-              : ''
-          }`}
-        >
-          <svg viewBox="0 0 80 80">
-            <rect x="8" y="8" width="64" height="64"></rect>
-          </svg>
-        </div>
-        <div
-          className={`loader ${
-            colorPoliceCanvas === '#FE4760'
-              ? 'loadAlt1'
-              : colorPoliceCanvas === '#F76B15'
-              ? 'loadAlt2'
-              : colorPoliceCanvas === '#0F0'
-              ? 'loadAlt3'
-              : colorPoliceCanvas === '#007bff'
-              ? 'loadAlt4'
-              : colorPoliceCanvas === '#6f42c1'
-              ? 'loadAlt5'
-              : ''
-          }`}
-        >
-          <svg viewBox="0 0 80 80">
-            <circle id="test" cx="40" cy="40" r="32"></circle>
-          </svg>
-        </div>
-
-        <div
-          className={`loader ${
-            colorPoliceCanvas === '#FE4760'
-              ? 'loadAlt1'
-              : colorPoliceCanvas === '#F76B15'
-              ? 'loadAlt2'
-              : colorPoliceCanvas === '#0F0'
-              ? 'loadAlt3'
-              : colorPoliceCanvas === '#007bff'
-              ? 'loadAlt4'
-              : colorPoliceCanvas === '#6f42c1'
-              ? 'loadAlt5'
-              : ''
-          }`}
-        >
-          <svg viewBox="0 0 80 80">
-            <rect x="8" y="8" width="64" height="64"></rect>
-          </svg>
-        </div>
-      </div>
-
       <div className="heroBox3">
         <div className="boxPara">
+          <div
+            className={`loader ${
+              colorPoliceCanvas === '#FE4760'
+                ? 'loadAlt1'
+                : colorPoliceCanvas === '#F76B15'
+                ? 'loadAlt2'
+                : colorPoliceCanvas === '#0F0'
+                ? 'loadAlt3'
+                : colorPoliceCanvas === '#007bff'
+                ? 'loadAlt4'
+                : colorPoliceCanvas === '#6f42c1'
+                ? 'loadAlt5'
+                : ''
+            }`}
+          >
+            <svg viewBox="0 0 80 80">
+              <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+          </div>
           <h5 className="h5Hero">
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[0].title
@@ -213,6 +171,25 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
           </p>
         </div>
         <div className="boxPara">
+          <div
+            className={`loader ${
+              colorPoliceCanvas === '#FE4760'
+                ? 'loadAlt1'
+                : colorPoliceCanvas === '#F76B15'
+                ? 'loadAlt2'
+                : colorPoliceCanvas === '#0F0'
+                ? 'loadAlt3'
+                : colorPoliceCanvas === '#007bff'
+                ? 'loadAlt4'
+                : colorPoliceCanvas === '#6f42c1'
+                ? 'loadAlt5'
+                : ''
+            }`}
+          >
+            <svg viewBox="0 0 80 80">
+              <circle id="test" cx="40" cy="40" r="32"></circle>
+            </svg>
+          </div>
           <h5 className="h5Hero">
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[1].title
@@ -225,6 +202,25 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
           </p>
         </div>
         <div className="boxPara cards">
+          <div
+            className={`loader ${
+              colorPoliceCanvas === '#FE4760'
+                ? 'loadAlt1'
+                : colorPoliceCanvas === '#F76B15'
+                ? 'loadAlt2'
+                : colorPoliceCanvas === '#0F0'
+                ? 'loadAlt3'
+                : colorPoliceCanvas === '#007bff'
+                ? 'loadAlt4'
+                : colorPoliceCanvas === '#6f42c1'
+                ? 'loadAlt5'
+                : ''
+            }`}
+          >
+            <svg viewBox="0 0 80 80">
+              <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+          </div>
           <h5 className="h5Hero">
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[2].title

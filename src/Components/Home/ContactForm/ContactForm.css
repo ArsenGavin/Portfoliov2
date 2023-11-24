@@ -202,6 +202,14 @@
   .card2Project5::after {
     background: linear-gradient(-45deg, #6f42c1 0%, #ece4de 100% );
   }
+
+  .card2Project1::before,.card2Project2::before,.card2Project3::before,.card2Project4::before,.card2Project5::before {
+    background: linear-gradient(-45deg, #007bff00 0%, #ece4de 100% );
+  }
+  .card2Project1::after,.card2Project2::after,.card2Project3::after,.card2Project4::after,.card2Project5::after {
+    background: linear-gradient(-45deg, #007bff00 0%, #ece4de 100% );
+  }
+  
   
   .heading {
     font-size: 20px;

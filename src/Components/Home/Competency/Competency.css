@@ -192,9 +192,11 @@
         text-align: center;
     }
     .boxTextSkill li {
-        font-size: 9px;
+        font-size: 12px;
     }
     .containerTextSkill {
         width: 90%;
+        flex-direction: column;
     }
+    
   }
