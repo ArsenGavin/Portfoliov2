@@ -333,7 +333,11 @@
         width: 100%;
         transform: translate(0 ,0);
       }
+      .ulNavBox {
+        margin: 0;
+        background: #000000;
+      }
       .ulNavBox li {
-        font-size: 10px;
+        font-size: 9px;
       }
   }
