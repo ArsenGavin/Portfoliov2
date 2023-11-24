@@ -33,4 +33,8 @@
     .languagesContainer {
         top: 10%;
     }
+    .btnLanguage {
+        font-size: 10px;
+        margin: 3px;
+    }
   }
