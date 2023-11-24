@@ -185,7 +185,7 @@
   left: 0;
   width: 25%;
   height: 3px; /* Épaisseur du soulignement */
- /* Couleur du soulignement */
+  background-color: #007bff;
   display: block;
 }
 .liNav2.actifNav1::after,.liNav2.actifNav2::after,.liNav2.actifNav3::after,.liNav2.actifNav4::after,.liNav2.actifNav5::after,.liNav2.actifNav6::after,.liNav2.actifNav7::after{
