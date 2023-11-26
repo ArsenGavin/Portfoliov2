@@ -84,6 +84,7 @@
       top: 4em;
       left: 50%;
       transform: translateX(-50%);
+      width: fit-content;
   }
   .checkToggleLightDark:checked + .checkboxToggleLightDark .slideToggleLightDark .toggleToggleLightDark {
     transform: translateX(calc(113px / 2));
