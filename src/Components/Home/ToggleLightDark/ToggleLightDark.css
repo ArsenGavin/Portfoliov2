@@ -81,8 +81,8 @@
     }
     .toggleLightDarkContainer {
       position: fixed;
-      top: 9.8%;
-      right: 2%;
+      top: 6%;
+      right: 23%;
   }
   .checkToggleLightDark:checked + .checkboxToggleLightDark .slideToggleLightDark .toggleToggleLightDark {
     transform: translateX(calc(113px / 2));
