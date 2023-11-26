@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfoliov2/static/css/main.1e6b3e53.css",
+    "main.css": "/Portfoliov2/static/css/main.9d540655.css",
     "main.js": "/Portfoliov2/static/js/main.a63cadd9.js",
     "static/media/Thomas Birmingham CV 2023.pdf": "/Portfoliov2/static/media/Thomas Birmingham CV 2023.881c9479826290b23a8e.pdf",
     "static/media/ThomasManga.png": "/Portfoliov2/static/media/ThomasManga.b2e2f50fd90184aa4548.png",
@@ -8,11 +8,11 @@
     "static/media/BasementGrotesque-Black.woff2": "/Portfoliov2/static/media/BasementGrotesque-Black.91312456d324928aac68.woff2",
     "static/media/imgLogo.png": "/Portfoliov2/static/media/imgLogo.e0c963d37276576aa5fc.png",
     "index.html": "/Portfoliov2/index.html",
-    "main.1e6b3e53.css.map": "/Portfoliov2/static/css/main.1e6b3e53.css.map",
+    "main.9d540655.css.map": "/Portfoliov2/static/css/main.9d540655.css.map",
     "main.a63cadd9.js.map": "/Portfoliov2/static/js/main.a63cadd9.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e6b3e53.css",
+    "static/css/main.9d540655.css",
     "static/js/main.a63cadd9.js"
   ]
 }
