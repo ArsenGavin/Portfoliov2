@@ -2,22 +2,30 @@ import './Hero.css';
 import DataFr from '../../../Utils/Data-Fr.json';
 import DataEn from '../../../Utils/Data-En.json';
 
-function Hero({ currentLanguage, colorPoliceCanvas }) {
+function Hero({ currentLanguage, colorPoliceCanvas, toggleLightDark }) {
   return (
     <div className="heroContainer">
       <div className="heroBox1">
-        <h2 className="h2Hero">
+        <h2
+          className={toggleLightDark === false ? 'h2Hero' : 'h2Hero FontBlack'}
+        >
           {currentLanguage === 'FR'
             ? DataFr.heroText.textH2
             : DataEn.heroText.textH2}
         </h2>
-        <h3 className="h3Hero">
+        <h3
+          className={toggleLightDark === false ? 'h3Hero' : 'h3Hero FontBlack'}
+        >
           {currentLanguage === 'FR'
             ? DataFr.heroText.textH3
             : DataEn.heroText.textH3}
         </h3>
         <div className="boxH3Hero">
-          <h3 className="h3HeroAlt1">
+          <h3
+            className={
+              toggleLightDark === false ? 'h3HeroAlt1' : 'h3HeroAlt1 FontBlack'
+            }
+          >
             <span
               className={`${
                 colorPoliceCanvas === '#FE4760'
@@ -37,10 +45,18 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
             </span>
             eb
           </h3>
-          <h3 className="h3HeroAlt2">
+          <h3
+            className={
+              toggleLightDark === false ? 'h3HeroAlt2' : 'h3HeroAlt2 FontBlack'
+            }
+          >
             {currentLanguage === 'FR' ? 'Intégration' : 'Integration'}
           </h3>
-          <h3 className="h3HeroAlt1">
+          <h3
+            className={
+              toggleLightDark === false ? 'h3HeroAlt1' : 'h3HeroAlt1 FontBlack'
+            }
+          >
             <span
               className={`${
                 colorPoliceCanvas === '#FE4760'
@@ -60,8 +76,18 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
             </span>
             avaScript
           </h3>
-          <h3 className="h3HeroAlt2">React</h3>
-          <h3 className="h3HeroAlt1">
+          <h3
+            className={
+              toggleLightDark === false ? 'h3HeroAlt1' : 'h3HeroAlt1 FontBlack'
+            }
+          >
+            React
+          </h3>
+          <h3
+            className={
+              toggleLightDark === false ? 'h3HeroAlt1' : 'h3HeroAlt1 FontBlack'
+            }
+          >
             <span
               className={`${
                 colorPoliceCanvas === '#FE4760'
@@ -81,7 +107,13 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
             </span>
             eb App
           </h3>
-          <h3 className="h3HeroAlt2">Front-End</h3>
+          <h3
+            className={
+              toggleLightDark === false ? 'h3HeroAlt1' : 'h3HeroAlt1 FontBlack'
+            }
+          >
+            Front-End
+          </h3>
         </div>
       </div>
       <div className="heroBox2">
@@ -105,7 +137,9 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
           </svg>
         </div>
         <p
-          className={`text1Hero ${
+          className={`${
+            toggleLightDark === false ? 'text1Hero' : 'text1Hero FontBlack '
+          } ${
             colorPoliceCanvas === '#FE4760'
               ? 'textAltColor1'
               : colorPoliceCanvas === '#F76B15'
@@ -127,12 +161,20 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
             ? DataFr.heroText.textP1
             : DataEn.heroText.textP1}
         </p>
-        <p className="text2Hero">
+        <p
+          className={
+            toggleLightDark === false ? 'text2Hero' : 'text2Hero FontBlack '
+          }
+        >
           {currentLanguage === 'FR'
             ? DataFr.heroText.textP2
             : DataEn.heroText.textP2}
         </p>
-        <p className="text3Hero">
+        <p
+          className={
+            toggleLightDark === false ? 'text3Hero' : 'text3Hero FontBlack '
+          }
+        >
           {currentLanguage === 'FR'
             ? DataFr.heroText.textP3
             : DataEn.heroText.textP3}
@@ -159,12 +201,20 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
               <rect x="8" y="8" width="64" height="64"></rect>
             </svg>
           </div>
-          <h5 className="h5Hero">
+          <h5
+            className={
+              toggleLightDark === false ? 'h5Hero' : 'h5Hero FontBlack '
+            }
+          >
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[0].title
               : DataEn.heroText.product[0].title}
           </h5>{' '}
-          <p className="text4Hero">
+          <p
+            className={
+              toggleLightDark === false ? 'text4Hero' : 'text4Hero FontBlack '
+            }
+          >
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[0].text
               : DataEn.heroText.product[0].text}
@@ -190,12 +240,20 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
               <circle id="test" cx="40" cy="40" r="32"></circle>
             </svg>
           </div>
-          <h5 className="h5Hero">
+          <h5
+            className={
+              toggleLightDark === false ? 'h5Hero' : 'h5Hero FontBlack '
+            }
+          >
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[1].title
               : DataEn.heroText.product[1].title}
-          </h5>{' '}
-          <p className="text4Hero">
+          </h5>
+          <p
+            className={
+              toggleLightDark === false ? 'text4Hero' : 'text4Hero FontBlack '
+            }
+          >
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[1].text
               : DataEn.heroText.product[1].text}
@@ -221,12 +279,20 @@ function Hero({ currentLanguage, colorPoliceCanvas }) {
               <rect x="8" y="8" width="64" height="64"></rect>
             </svg>
           </div>
-          <h5 className="h5Hero">
+          <h5
+            className={
+              toggleLightDark === false ? 'h5Hero' : 'h5Hero FontBlack '
+            }
+          >
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[2].title
               : DataEn.heroText.product[2].title}
           </h5>{' '}
-          <p className="text4Hero">
+          <p
+            className={
+              toggleLightDark === false ? 'text4Hero' : 'text4Hero FontBlack '
+            }
+          >
             {currentLanguage === 'FR'
               ? DataFr.heroText.product[2].text
               : DataEn.heroText.product[2].text}

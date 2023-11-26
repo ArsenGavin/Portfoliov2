@@ -24,6 +24,7 @@
   width: 10px;
   height: 6px;
   border-radius: 20px;
+  border: solid 2px black;
 }
 
 .bubble::after{
@@ -35,6 +36,7 @@
   width: 18px;
   height: 10px;
   border-radius: 20px;
+  border: solid 2px black;
 }
 
 

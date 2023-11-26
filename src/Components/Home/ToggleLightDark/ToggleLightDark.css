@@ -1,0 +1,90 @@
+.toggleLightDarkContainer {
+    position: fixed;
+    top: 1.8%;
+    right: 2%;
+    animation: imgfadein 1s ease-in;
+    -moz-animation: imgfadein 1s ease-in;  
+    -webkit-animation: imgfadein 1s ease-in;  
+    -o-animation: imgfadein 1s ease-in; 
+    z-index: 15;
+}
+
+.checkboxToggleLightDark {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd6d6;
+    border-radius: 30px;
+    position: relative;
+    color: black;
+    overflow: hidden;
+  }
+  
+  #checkbox_toggle {
+    display: none;
+  }
+  
+  .checkboxToggleLightDark .toggleToggleLightDark {
+    width: 96px;
+    height: 40px;
+    position: absolute;
+    border-radius: 30px;
+    top: 4px;
+    left: 6px;
+    cursor: pointer;
+    background: linear-gradient(40deg, #c0ff00,#ffffff 70%);
+    transition: 0.4s;
+    box-shadow: 0px 0px 3px rgb(255, 255, 20), 0px 0px 5px rgb(255, 255, 20);
+  }
+  
+  .checkboxToggleLightDark .slideToggleLightDark {
+    width: 220px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  
+  .checkboxToggleLightDark .slideToggleLightDark .textToggleLightDark {
+    font-size: 11px;
+    font-weight: 700;
+    z-index: 100;
+    cursor: pointer;
+  }
+  
+  .checkToggleLightDark:checked + .checkboxToggleLightDark .slideToggleLightDark .toggleToggleLightDark {
+    transform: translateX(113px);
+    background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+    box-shadow: -0px -0px 10px #8983F7, -0px -0px 3px #8983F7;
+  }
+  
+  .checkToggleLightDark:checked + .checkboxToggleLightDark .slideToggleLightDark {
+    background-color: #0a1929;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 480px) {
+    /* Styles à appliquer uniquement aux mobiles en mode paysage */
+    .checkboxToggleLightDark .toggleToggleLightDark {
+      width: calc(96px / 2);
+      height: calc(40px / 2);
+      top: 2px;
+      left: 3px;
+    }
+
+    .checkboxToggleLightDark .slideToggleLightDark {
+      width: calc(220px / 2);
+      height: calc(48px / 2);
+    }
+    .checkboxToggleLightDark .slideToggleLightDark .textToggleLightDark {
+      font-size: 9px;
+    }
+    .toggleLightDarkContainer {
+      position: fixed;
+      top: 9.8%;
+      right: 2%;
+  }
+  .checkToggleLightDark:checked + .checkboxToggleLightDark .slideToggleLightDark .toggleToggleLightDark {
+    transform: translateX(calc(113px / 2));
+  }
+  }

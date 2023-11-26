@@ -261,6 +261,7 @@
 .text1Hero,.text2Hero,.text3Hero,.h5Hero,.text4Hero {
     color: #ece4de;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .text1Hero{

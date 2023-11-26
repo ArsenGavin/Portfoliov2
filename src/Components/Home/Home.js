@@ -9,8 +9,15 @@ import Languages from './Languages/Languages';
 import Projects from './Projects/Projects';
 import Competency from './Competency/Competency';
 import ContactForm from './ContactForm/ContactForm';
+import ToggleLightDark from './ToggleLightDark/ToggleLightDark';
 
-function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
+function Home({
+  currentLanguage,
+  toggleLanguage,
+  colorPoliceCanvas,
+  handleClickToggleLightDark,
+  toggleLightDark,
+}) {
   const [bubbleChatTextTab, setBubbleChatTextTab] = useState(DataFr.BubbleTab);
   const [currentComponent, setCurrentComponent] = useState('2');
   const cleanStatusBubble = useCallback(() => {
@@ -53,16 +60,22 @@ function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
         cleanStatusBubble={cleanStatusBubble}
         actifToggleStatusBubble={actifToggleStatusBubble}
         currentLanguage={currentLanguage}
+        toggleLightDark={toggleLightDark}
       />
       <Languages
         currentLanguage={currentLanguage}
         toggleLanguage={toggleLanguage}
+      />
+      <ToggleLightDark
+        handleClickToggleLightDark={handleClickToggleLightDark}
+        toggleLightDark={toggleLightDark}
       />
       <div className="homeComponentsContainer">
         <section id="Home">
           <Hero
             currentLanguage={currentLanguage}
             colorPoliceCanvas={colorPoliceCanvas}
+            toggleLightDark={toggleLightDark}
           />
         </section>
         <section id="Competency">
@@ -75,6 +88,7 @@ function Home({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
           <ContactForm
             currentLanguage={currentLanguage}
             colorPoliceCanvas={colorPoliceCanvas}
+            toggleLightDark={toggleLightDark}
           />
         </section>
       </div>

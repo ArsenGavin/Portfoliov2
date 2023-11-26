@@ -12,6 +12,7 @@ function PresentationCard({
   cleanStatusBubble,
   actifToggleStatusBubble,
   currentLanguage,
+  toggleLightDark,
 }) {
   const infoCard = [
     {
@@ -58,7 +59,9 @@ function PresentationCard({
         </h2>
         <div className="iconReseauBox">
           <AiOutlineLinkedin
-            className="icon"
+            className={
+              toggleLightDark === false ? 'icon' : 'icon iconReseauBlack'
+            }
             onClick={() => {
               openWebOnglet(
                 'https://www.linkedin.com/in/thomas-birmingham-aa9345177/'
@@ -66,7 +69,9 @@ function PresentationCard({
             }}
           />
           <AiFillGithub
-            className="icon"
+            className={
+              toggleLightDark === false ? 'icon' : 'icon iconReseauBlack'
+            }
             onClick={() => {
               openWebOnglet('https://github.com/ArsenGavin');
             }}
@@ -80,7 +85,13 @@ function PresentationCard({
             alt="CV Thomas Birmingham"
             className="aIcon"
           >
-            <LuFileSpreadsheet className="icon iconCV" />
+            <LuFileSpreadsheet
+              className={
+                toggleLightDark === false
+                  ? 'icon iconCV'
+                  : 'icon iconCV iconReseauBlack'
+              }
+            />
           </a>
           <BsEnvelopeAt
             onClick={() => {
@@ -89,7 +100,9 @@ function PresentationCard({
             onKeyDown={() => {
               copyText(infoCard[1].text);
             }}
-            className="icon "
+            className={
+              toggleLightDark === false ? 'icon' : 'icon iconReseauBlack'
+            }
           />
         </div>
         <div className="infoCardBox">

@@ -2,7 +2,7 @@ import './ContactForm.css';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-function ContactForm({ currentLanguage, colorPoliceCanvas }) {
+function ContactForm({ currentLanguage, colorPoliceCanvas, toggleLightDark }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -43,9 +43,15 @@ function ContactForm({ currentLanguage, colorPoliceCanvas }) {
             : ''
         }`}
       >
-        <h2 className="titleForm">CONTACT</h2>
+        <h2
+          className={
+            toggleLightDark === false ? 'titleForm' : 'titleForm FontBlack '
+          }
+        >
+          CONTACT
+        </h2>
         <form className="formBox" ref={form} onSubmit={sendEmail}>
-          <label>
+          <label className={toggleLightDark === false ? '' : 'FontBlack '}>
             {currentLanguage === 'FR' ? 'Votre nom :' : 'Your name :'}
           </label>
           <input
@@ -65,7 +71,8 @@ function ContactForm({ currentLanguage, colorPoliceCanvas }) {
             type="text"
             name="user_name"
           />
-          <label>
+          <label className={toggleLightDark === false ? '' : 'FontBlack '}>
+            >
             {currentLanguage === 'FR'
               ? 'A quel email dois-je repondre :'
               : 'Your email :'}
@@ -87,8 +94,8 @@ function ContactForm({ currentLanguage, colorPoliceCanvas }) {
             type="email"
             name="user_email"
           />
-          <label>
-            {currentLanguage === 'FR' ? 'Votre message :' : 'Your message :'}
+          <label className={toggleLightDark === false ? '' : 'FontBlack '}>
+            >{currentLanguage === 'FR' ? 'Votre message :' : 'Your message :'}
           </label>
           <textarea
             className={`${
@@ -106,7 +113,13 @@ function ContactForm({ currentLanguage, colorPoliceCanvas }) {
             }`}
             name="message"
           />
-          <button className="buttonForm" type="submit" value="Send">
+          <button
+            className={
+              toggleLightDark === false ? 'buttonForm' : 'buttonForm FontBlack '
+            }
+            type="submit"
+            value="Send"
+          >
             {currentLanguage === 'FR' ? 'Envoyer' : 'Send'}
           </button>
         </form>

@@ -3,8 +3,8 @@
     width: fit-content;
     height: fit-content;
     position: fixed;
-    top: 24px;
-    right: 54px;
+    top: 8%;
+    right: 5%;
     animation: imgfadein 2s ease-in;
     -moz-animation: imgfadein 2s ease-in;  
     -webkit-animation: imgfadein 2s ease-in;  
@@ -14,12 +14,12 @@
 
 .btnLanguage {
     margin: 0 5%;
-    padding: 10% 10% 8%;
-    font-size: 15px;
+    padding: 13% 16% 8% 14%;
+    font-size: 14px;
     color:rgb(236 228 222) ;
     background-color: black;
     font-weight: 900;
-    border-radius: 8px;
+    border-radius: 25px;
 }
 
 .btnLanguageActif {
@@ -31,7 +31,7 @@
     /* Styles spécifiques pour les smartphones en mode portrait */
 
     .languagesContainer {
-        top: 5%;
+        top: 6%;
         right: 9%;
     }
     .btnLanguage {

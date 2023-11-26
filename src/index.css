@@ -18,10 +18,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background: #2b1151; */
   background: black;
+  /* background-image: repeating-linear-gradient(320deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 2px,transparent 2px, transparent 4px),linear-gradient(365deg, rgb(29, 67, 158),rgb(219, 239, 242));  */
+  background-repeat: no-repeat;
+  background-size: contain;
   scrollbar-color: #346abf white; 
   scrollbar-width: auto; 
   overflow-y: scroll;
   scroll-behavior: smooth;
+}
+
+.FontBlack {
+  color: black!important;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
