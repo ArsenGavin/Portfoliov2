@@ -105,6 +105,10 @@
   text-transform: uppercase;
 }
 
+.ulNavBoxBlack{
+  background: white!important;
+}
+
 .ulNavBox li{
   width: 25%;
   text-align: center;
@@ -119,6 +123,10 @@
     width: fit-content;
     height: fit-content;
     user-select: none;
+}
+
+.liNavBlack {
+  color: black!important;
 }
 
 .imgBoxUl{

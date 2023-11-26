@@ -31,8 +31,8 @@
     /* Styles spécifiques pour les smartphones en mode portrait */
 
     .languagesContainer {
-        top: 6%;
-        right: 9%;
+        top: 4em;
+        right: 2em;
     }
     .btnLanguage {
         font-size: 10px;

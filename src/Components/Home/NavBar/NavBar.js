@@ -2,6 +2,7 @@ import './NavBar.css';
 import DataFr from '../../../Utils/Data-Fr.json';
 import DataEn from '../../../Utils/Data-En.json';
 import imgLogo from '../../../img/imgLogo.png';
+import imgLogoB from '../../../img/imgLogoB.png';
 import { Link } from 'react-scroll';
 
 function NavBar({
@@ -11,15 +12,21 @@ function NavBar({
   currentComponent,
   currentLanguage,
   colorPoliceCanvas,
+  toggleLightDark,
 }) {
   const handleClick = (currentComponent) => {
     cleanStatusBubble();
     actifToggleStatusBubble(currentComponent);
     handleCurrentComponent(currentComponent);
   };
+  const currentLogo = toggleLightDark === false ? imgLogo : imgLogoB;
   return (
     <nav className="dashboardContainer">
-      <ul className="ulNavBox">
+      <ul
+        className={
+          toggleLightDark === false ? 'ulNavBox' : 'ulNavBox ulNavBoxBlack'
+        }
+      >
         <li>
           <Link
             to="Home"
@@ -33,6 +40,7 @@ function NavBar({
             onClick={() => {
               handleClick('2');
             }}
+            className={toggleLightDark === false ? '' : 'liNavBlack'}
             activeClass={`imgBoxUl liNavAlt ${
               colorPoliceCanvas === '#FE4760'
                 ? 'actifNav1'
@@ -51,7 +59,7 @@ function NavBar({
                 : ''
             }`}
           >
-            <img src={imgLogo} className="LogoTBMenu" alt="LogoTB" />
+            <img src={currentLogo} className="LogoTBMenu" alt="LogoTB" />
           </Link>
         </li>
 
@@ -68,6 +76,7 @@ function NavBar({
             onClick={() => {
               handleClick('4');
             }}
+            className={toggleLightDark === false ? '' : 'liNavBlack'}
             activeClass={`liNav2 ${
               colorPoliceCanvas === '#FE4760'
                 ? 'actifNav1'
@@ -104,6 +113,7 @@ function NavBar({
             onClick={() => {
               handleClick('3');
             }}
+            className={toggleLightDark === false ? '' : 'liNavBlack'}
             activeClass={`liNav3 ${
               colorPoliceCanvas === '#FE4760'
                 ? 'actifNav1'
@@ -140,6 +150,7 @@ function NavBar({
             onClick={() => {
               handleClick('5');
             }}
+            className={toggleLightDark === false ? '' : 'liNavBlack'}
             activeClass={`liNav4 ${
               colorPoliceCanvas === '#FE4760'
                 ? 'actifNav1'

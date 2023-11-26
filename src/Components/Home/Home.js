@@ -54,6 +54,7 @@ function Home({
         currentComponent={currentComponent}
         currentLanguage={currentLanguage}
         colorPoliceCanvas={colorPoliceCanvas}
+        toggleLightDark={toggleLightDark}
       />
       <InfoCard
         bubbleChatTextTab={bubbleChatTextTab}
