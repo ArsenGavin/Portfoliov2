@@ -258,6 +258,6 @@
     font-size: 10px;
   }
   .chatBox {
-    margin: 0 0 14% 0;
+    display: none;
   }
 }

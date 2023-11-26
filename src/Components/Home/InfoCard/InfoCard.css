@@ -295,10 +295,28 @@
 
   @media only screen and (max-width: 480px) {
     /* Styles à appliquer uniquement aux mobiles en mode paysage */
-    .presentationCardContainer {
+    .titleCard {
       display: none;
     }
-    .presensationCard {
+    .infoCardBox {
       display: none;
+    }
+    .presentationCardContainer {
+       background-color: transparent;
+    }
+    .iconReseauBox{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 60%;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin: 4% auto;
+        color: rgb(236 228 222);
+        position: fixed;
+        top: 4%;
+        left: 2%;
+        width: 69%;
+        height: auto;
     }
   }
