@@ -46,9 +46,7 @@ function ContactForm({ currentLanguage, colorPoliceCanvas }) {
         <h2 className="titleForm">CONTACT</h2>
         <form className="formBox" ref={form} onSubmit={sendEmail}>
           <label>
-            {currentLanguage === 'FR'
-              ? 'Comment dois-je vous appelez ?'
-              : 'Your name :'}
+            {currentLanguage === 'FR' ? 'Votre nom :' : 'Your name :'}
           </label>
           <input
             className={`${
@@ -69,7 +67,7 @@ function ContactForm({ currentLanguage, colorPoliceCanvas }) {
           />
           <label>
             {currentLanguage === 'FR'
-              ? 'A quel email dois-je repondre ?'
+              ? 'A quel email dois-je repondre :'
               : 'Your email :'}
           </label>
           <input
