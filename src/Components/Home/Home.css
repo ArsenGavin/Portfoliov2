@@ -1,10 +1,10 @@
 #Home{
-  height: fit-content;
+  height: 200vh;
   padding-bottom: 10%;
 }
 
 #Competency, #Project, #Contact {
-    height: fit-content;
+    height: 100vh;
 }
 
 .homeComponentsContainer {
