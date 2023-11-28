@@ -12,10 +12,10 @@
 .checkboxToggleLightDark {
     width: 100%;
     height: 100%;
-    background-color: #ddd6d6;
+    background-color: #0a1929;
     border-radius: 30px;
     position: relative;
-    color: black;
+    color: white;
     overflow: hidden;
   }
   
@@ -31,9 +31,9 @@
     top: 4px;
     left: 6px;
     cursor: pointer;
-    background: linear-gradient(40deg, #c0ff00,#ffffff 70%);
+    background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
     transition: 0.4s;
-    box-shadow: 0px 0px 3px rgb(255, 255, 20), 0px 0px 5px rgb(255, 255, 20);
+    box-shadow: -0px -0px 10px #8983F7, -0px -0px 3px #8983F7;
   }
   
   .checkboxToggleLightDark .slideToggleLightDark {
@@ -54,13 +54,13 @@
   
   .checkToggleLightDark:checked + .checkboxToggleLightDark .slideToggleLightDark .toggleToggleLightDark {
     transform: translateX(113px);
-    background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
-    box-shadow: -0px -0px 10px #8983F7, -0px -0px 3px #8983F7;
+    background: linear-gradient(40deg, #c0ff00,#ffffff 70%);
+    box-shadow: 0px 0px 3px rgb(255, 255, 20), 0px 0px 5px rgb(255, 255, 20);
   }
   
   .checkToggleLightDark:checked + .checkboxToggleLightDark .slideToggleLightDark {
-    background-color: #0a1929;
-    color: #fff;
+    background-color: #ddd6d6;
+    color: black;
   }
 
   @media only screen and (max-width: 480px) {
@@ -82,8 +82,8 @@
     .toggleLightDarkContainer {
       position: fixed;
       top: 4em;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0%;
+      width: -moz-fit-content;
       width: fit-content;
   }
   .checkToggleLightDark:checked + .checkboxToggleLightDark .slideToggleLightDark .toggleToggleLightDark {

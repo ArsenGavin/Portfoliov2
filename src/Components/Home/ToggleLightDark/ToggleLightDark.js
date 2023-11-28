@@ -13,6 +13,9 @@ function ToggleLightDark({ handleClickToggleLightDark, toggleLightDark }) {
         id="checkbox_toggle"
         type="checkbox"
         className="checkToggleLightDark"
+        onClick={() => {
+          ClickToggle();
+        }}
       />
       <div className="checkboxToggleLightDark">
         <label className="slideToggleLightDark" for="checkbox_toggle">
@@ -20,23 +23,11 @@ function ToggleLightDark({ handleClickToggleLightDark, toggleLightDark }) {
             className="toggleToggleLightDark"
             for="checkbox_toggle"
           ></label>
-          <label
-            className="textToggleLightDark"
-            for="checkbox_toggle"
-            onClick={() => {
-              ClickToggle();
-            }}
-          >
-            Light M
-          </label>
-          <label
-            className="textToggleLightDark"
-            for="checkbox_toggle"
-            onClick={() => {
-              ClickToggle();
-            }}
-          >
+          <label className="textToggleLightDark" for="checkbox_toggle">
             Dark M
+          </label>
+          <label className="textToggleLightDark" for="checkbox_toggle">
+            Light M
           </label>
         </label>
       </div>

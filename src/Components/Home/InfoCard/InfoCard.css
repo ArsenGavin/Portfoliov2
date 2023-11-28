@@ -309,19 +309,17 @@
        width: 0;
     }
     .iconReseauBox{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 60%;
-        height: -moz-fit-content;
-        height: fit-content;
-        margin: 4% auto;
-        color: rgb(236 228 222);
-        position: fixed;
-        top: 4%;
-        left: 2%;
-        width: 69%;
-        height: auto;
+      display: flex;
+      justify-content: space-between;
+      height: -moz-fit-content;
+      margin: 4% auto;
+      color: rgb(236 228 222);
+      position: fixed;
+      bottom: 0%;
+      left: 50%;
+      width: 55%;
+      height: auto;
+      transform: translate(-50%, 0);
     }
     .iconReseauBlack{
       color:black;

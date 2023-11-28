@@ -11,7 +11,7 @@ function App() {
   const colors = ['#FE4760', '#0F0', '#007bff', '#6f42c1'];
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
   const [colorPoliceCanvas, setColorPoliceCanvas] = useState(randomColor);
-  const [toggleLightDark, setToggleLightDark] = useState(true);
+  const [toggleLightDark, setToggleLightDark] = useState(false);
   const handleClickToggleLightDark = () => {
     let toggle = toggleLightDark;
     setToggleLightDark(!toggle);
