@@ -83,7 +83,7 @@ function Home({
           <Competency currentLanguage={currentLanguage} />
         </section>
         <section id="Project">
-          <Projects colorPoliceCanvas={colorPoliceCanvas} />
+          <Projects currentLanguage={currentLanguage} />
         </section>
         <section id="Contact">
           <ContactForm
