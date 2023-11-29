@@ -147,6 +147,7 @@
     "heroText": 
       {
         "textH2": "Freelance Developer",
+        "textH21": "Graduate at Epitech Paris 2022",
         "textH3": "Contact me for all your projects",
         "textP1": "TOGETHER",
         "textP2": "DEVELOP",
@@ -161,7 +162,7 @@
             "text" : "Imagine, design and program web projects by proposing technical and automated solutions."
           },
           {
-            "title": "FULL REMOTE", 
+            "title": "HYBRID REMOTE", 
             "text" : "Organized remotely, we communicate, we program objectives, we use agile methods."
           }
         ]

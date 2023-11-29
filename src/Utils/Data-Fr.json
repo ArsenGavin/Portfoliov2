@@ -147,6 +147,7 @@
     "heroText": 
       {
         "textH2": "Développeur Freelance",
+        "textH21": "Dîplomé à Epitech Paris 2022",
         "textH3": "Contactez-moi pour tous vos projets",
         "textP1": "ENSEMBLE",
         "textP2": "DÉVELOPPONS",
@@ -161,8 +162,8 @@
             "text" : "Imaginer, concevoir et programmer des projets web en proposant des solutions techniques et automatisées."
           },
           {
-            "title": "FULL REMOTE", 
-            "text" : "Organisé à distance, on communique, on programme des objectifs, on utilise des méthodes agiles."
+            "title": "HYBRIDE REMOTE", 
+            "text" : "Organisé à distance ou non, on communique, on programme des objectifs, on utilise des méthodes agiles."
           }
         ]
       }

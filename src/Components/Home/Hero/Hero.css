@@ -49,8 +49,17 @@
     color: #ece4de;
     font-size: 25px;
     font-weight: 600;
-    margin: 3% 0 1%;
+    margin: 2% 0 1%;
     letter-spacing: 2px;
+}
+
+.h3HeroAlt {
+  text-align: center;
+  color: #ece4de;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 2% 0 1%;
+  letter-spacing: 2px;
 }
 
 .boxH3Hero{
@@ -617,11 +626,16 @@
       margin-left: 0;
     }
     .h2Hero {
-      font-size: 20px;
+      font-size: 22px;
       text-align: center;
     }
     .h3Hero {
-      font-size: 22px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .h3HeroAlt {
+      font-size: 18px;
       text-align: center;
     }
 

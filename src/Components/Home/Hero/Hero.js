@@ -14,6 +14,15 @@ function Hero({ currentLanguage, colorPoliceCanvas, toggleLightDark }) {
             : DataEn.heroText.textH2}
         </h2>
         <h3
+          className={
+            toggleLightDark === false ? 'h3HeroAlt' : 'h3Hero FontBlack'
+          }
+        >
+          {currentLanguage === 'FR'
+            ? DataFr.heroText.textH21
+            : DataEn.heroText.textH21}
+        </h3>
+        <h3
           className={toggleLightDark === false ? 'h3Hero' : 'h3Hero FontBlack'}
         >
           {currentLanguage === 'FR'
