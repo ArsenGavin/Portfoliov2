@@ -66,10 +66,12 @@ function Home({
       <Languages
         currentLanguage={currentLanguage}
         toggleLanguage={toggleLanguage}
+        colorPoliceCanvas={colorPoliceCanvas}
       />
       <ToggleLightDark
         handleClickToggleLightDark={handleClickToggleLightDark}
         toggleLightDark={toggleLightDark}
+        colorPoliceCanvas={colorPoliceCanvas}
       />
       <div className="homeComponentsContainer">
         <section id="Home">

@@ -1,7 +1,7 @@
 .toggleLightDarkContainer {
     position: fixed;
     top: 1.8%;
-    right: 2%;
+    right: 2em;
     animation: imgfadein 1s ease-in;
     -moz-animation: imgfadein 1s ease-in;  
     -webkit-animation: imgfadein 1s ease-in;  
@@ -22,6 +22,10 @@
   #checkbox_toggle {
     display: none;
   }
+
+  #checkbox_toggle2 {
+    display: none;
+  }
   
   .checkboxToggleLightDark .toggleToggleLightDark {
     width: 96px;
@@ -31,9 +35,33 @@
     top: 4px;
     left: 6px;
     cursor: pointer;
-    background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+    background: linear-gradient(40deg, #8983F7, #8983F7 70%);
     transition: 0.4s;
     box-shadow: -0px -0px 10px #8983F7, -0px -0px 3px #8983F7;
+  }
+  .checkboxToggleLightDarkAlt1 .toggleToggleLightDarkAlt1 {
+    background: linear-gradient(40deg, #dac3c6, #FE4760 70%);
+    box-shadow: -0px -0px 10px #FE4760, -0px -0px 3px #FE4760;
+  }
+
+  .checkboxToggleLightDarkAlt2 .toggleToggleLightDarkAlt2 {
+    background: linear-gradient(40deg, #dbc6b9, #F76B15 70%);
+    box-shadow: -0px -0px 10px #F76B15, -0px -0px 3px #F76B15;
+  }
+
+  .checkboxToggleLightDarkAlt3 .toggleToggleLightDarkAlt3 {
+    background: linear-gradient(40deg, rgb(101, 114, 101), #0F0 70%);
+    box-shadow: -0px -0px 10px #0F0, -0px -0px 3px #0F0;
+  }
+
+  .checkboxToggleLightDarkAlt4 .toggleToggleLightDarkAlt4 {
+    background: linear-gradient(40deg, #c0cede, #007bff 70%);
+    box-shadow: -0px -0px 10px #007bff, -0px -0px 3px #007bff;
+  }
+
+  .checkboxToggleLightDarkAlt5 .toggleToggleLightDarkAlt5 {
+    background: linear-gradient(40deg, #b6abcb, #6f42c1 70%);
+    box-shadow: -0px -0px 10px #6f42c1, -0px -0px 3px #6f42c1;
   }
   
   .checkboxToggleLightDark .slideToggleLightDark {
@@ -46,16 +74,17 @@
   }
   
   .checkboxToggleLightDark .slideToggleLightDark .textToggleLightDark {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
     z-index: 100;
     cursor: pointer;
+    color: black;
   }
   
   .checkToggleLightDark:checked + .checkboxToggleLightDark .slideToggleLightDark .toggleToggleLightDark {
     transform: translateX(113px);
-    background: linear-gradient(40deg, #c0ff00,#ffffff 70%);
-    box-shadow: 0px 0px 3px rgb(255, 255, 20), 0px 0px 5px rgb(255, 255, 20);
+    background: linear-gradient(40deg, #93a360,#ffffff 70%);
+    box-shadow: 0px 0px 3px #93a360, 0px 0px 5px #93a360;
   }
   
   .checkToggleLightDark:checked + .checkboxToggleLightDark .slideToggleLightDark {

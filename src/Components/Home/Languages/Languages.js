@@ -1,13 +1,17 @@
 import './Languages.css';
 
-function Languages({ currentLanguage, toggleLanguage }) {
-  const handleClick = (current) => {
-    toggleLanguage(current);
+function Languages({ currentLanguage, toggleLanguage, colorPoliceCanvas }) {
+  const handleClick = () => {
+    let lang;
+    if (currentLanguage === 'FR') {
+      lang = 'EN';
+    } else {
+      lang = 'FR';
+    }
+    toggleLanguage(lang);
   };
-
   return (
     <div className="languagesContainer">
-      {' '}
       <button
         className={`btnLanguage ${
           currentLanguage === 'FR' ? `btnLanguageActif` : ''

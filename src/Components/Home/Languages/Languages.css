@@ -1,25 +1,28 @@
 .languagesContainer {
     display: flex;
-    width: fit-content;
-    height: fit-content;
+    justify-content: space-between;
+    width: -moz-fit-content;
+    width: 70px;
+    height: -moz-fit-content;
     position: fixed;
-    top: 8%;
-    right: 5%;
+    top: 9%;
+    right: 6.5em;
     animation: imgfadein 2s ease-in;
-    -moz-animation: imgfadein 2s ease-in;  
-    -webkit-animation: imgfadein 2s ease-in;  
-    -o-animation: imgfadein 2s ease-in; 
+    -moz-animation: imgfadein 2s ease-in;
+    -webkit-animation: imgfadein 2s ease-in;
+    -o-animation: imgfadein 2s ease-in;
     z-index: 10;
 }
 
 .btnLanguage {
     margin: 0 5%;
-    padding: 13% 16% 8% 14%;
+    padding: 7% 25% 7% 25%;
     font-size: 14px;
-    color:rgb(236 228 222) ;
+    color: rgb(236 228 222);
     background-color: black;
     font-weight: 900;
     border-radius: 25px;
+    width: auto;
 }
 
 .btnLanguageActif {
@@ -32,7 +35,7 @@
 
     .languagesContainer {
         top: 4em;
-        right: 2em;
+        right: 2.5em;
     }
     .btnLanguage {
         font-size: 10px;

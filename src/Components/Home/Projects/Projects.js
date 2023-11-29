@@ -2,20 +2,12 @@ import './Projects.css';
 import hNY from '../../../img/hpn.png';
 import takoma from '../../../img/takoma.gif';
 import popcote from '../../../img/Malt3.png';
-import {
-  FaFigma,
-  FaReact,
-  FaWordpress,
-  FaDocker,
-  FaGithub,
-} from 'react-icons/fa';
+import { FaFigma, FaReact, FaWordpress, FaGithub } from 'react-icons/fa';
 import {
   SiAdobephotoshop,
-  SiTypescript,
   SiExpress,
   SiAdobeillustrator,
 } from 'react-icons/si';
-import { TbBrandThreejs } from 'react-icons/tb';
 
 function Projects({ currentLanguage }) {
   return (
@@ -57,19 +49,16 @@ function Projects({ currentLanguage }) {
           <FaReact className="iconSkill iconSkillAlt5 iconSkillProject" />
           <FaGithub className="iconSkill iconSkillAlt10 iconSkillProject" />
         </div>
+        -
       </div>
       <div className="cardBox">
         <img className="project3" src={popcote} alt="gif projet" />
-        <p className="heading">
-          {currentLanguage === 'FR'
-            ? 'Application React Native / Node js'
-            : 'Application React Native / Node js'}
-        </p>
+        <p className="heading">Application React Native / Node js</p>
         <div className="compéBox">
           <FaFigma className="iconSkill iconSkillAlt1 iconSkillProject" />
           <SiAdobephotoshop className="iconSkill iconSkillAlt2 iconSkillProject" />
-          <SiExpress className="iconSkill iconSkillAlt8 iconSkillProject" />
           <FaReact className="iconSkill iconSkillAlt5 iconSkillProject" />
+          <SiExpress className="iconSkill iconSkillAlt8 iconSkillProject" />
           <FaGithub className="iconSkill iconSkillAlt10 iconSkillProject" />
         </div>
       </div>
