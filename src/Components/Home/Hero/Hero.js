@@ -87,7 +87,7 @@ function Hero({ currentLanguage, colorPoliceCanvas, toggleLightDark }) {
           </h3>
           <h3
             className={
-              toggleLightDark === false ? 'h3HeroAlt1' : 'h3HeroAlt1 FontBlack'
+              toggleLightDark === false ? 'h3HeroAlt2' : 'h3HeroAlt2 FontBlack'
             }
           >
             React
@@ -118,7 +118,7 @@ function Hero({ currentLanguage, colorPoliceCanvas, toggleLightDark }) {
           </h3>
           <h3
             className={
-              toggleLightDark === false ? 'h3HeroAlt1' : 'h3HeroAlt1 FontBlack'
+              toggleLightDark === false ? 'h3HeroAlt2' : 'h3HeroAlt2 FontBlack'
             }
           >
             Front-End
