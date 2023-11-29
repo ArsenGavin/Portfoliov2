@@ -1,5 +1,5 @@
 import './Projects.css';
-import hNY from '../../../img/hpn.png';
+import hNY from '../../../img/HNY.gif';
 import takoma from '../../../img/takoma.gif';
 import popcote from '../../../img/Malt3.png';
 import { FaFigma, FaReact, FaWordpress, FaGithub } from 'react-icons/fa';
