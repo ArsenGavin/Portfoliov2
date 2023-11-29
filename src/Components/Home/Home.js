@@ -85,7 +85,10 @@ function Home({
           <Competency currentLanguage={currentLanguage} />
         </section>
         <section id="Project">
-          <Projects currentLanguage={currentLanguage} />
+          <Projects
+            currentLanguage={currentLanguage}
+            toggleLightDark={toggleLightDark}
+          />
         </section>
         <section id="Contact">
           <ContactForm

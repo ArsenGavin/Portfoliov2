@@ -9,15 +9,23 @@ import {
   SiAdobeillustrator,
 } from 'react-icons/si';
 
-function Projects({ currentLanguage }) {
+function Projects({ currentLanguage, toggleLightDark }) {
   return (
     <div className="projectContainer">
-      <h2 className="projectTitle">
+      <h2
+        className={
+          toggleLightDark === false ? 'projectTitle' : 'projectTitle FontBlack'
+        }
+      >
         {currentLanguage === 'FR' ? 'Projets' : 'Projects'}
       </h2>
       <div className="cardBox">
         <img className="project1" src={takoma} alt="gif projet" />
-        <p className="heading">
+        <p
+          className={
+            toggleLightDark === false ? 'heading' : 'heading FontBlack'
+          }
+        >
           {currentLanguage === 'FR'
             ? 'Wordpress Theme sur mesure'
             : 'Custom Wordpress Theme'}
@@ -31,14 +39,20 @@ function Projects({ currentLanguage }) {
       </div>
       <div className="cardBox">
         <img className="project2" src={hNY} alt="gif projet" />
-        <p className="heading">
+        <p
+          className={
+            toggleLightDark === false ? 'heading' : 'heading FontBlack'
+          }
+        >
           {currentLanguage === 'FR'
-            ? 'Carte de voeux nouvel ans Web App'
+            ? 'Carte de voeux nouvelle an Web App'
             : 'New Years Greeting Card Web App'}
         </p>
         <a
           href="https://www.youtube.com/watch?v=WXVT7SfVfpM&ab_channel=ThomasBirmingham"
-          className="linkVid"
+          className={
+            toggleLightDark === false ? 'linkVid' : 'linkVid FontBlack'
+          }
         >
           Video link 🔗
         </a>
@@ -53,7 +67,13 @@ function Projects({ currentLanguage }) {
       </div>
       <div className="cardBox">
         <img className="project3" src={popcote} alt="gif projet" />
-        <p className="heading">Application React Native / Node js</p>
+        <p
+          className={
+            toggleLightDark === false ? 'heading' : 'heading FontBlack'
+          }
+        >
+          Application React Native / Node js
+        </p>
         <div className="compéBox">
           <FaFigma className="iconSkill iconSkillAlt1 iconSkillProject" />
           <SiAdobephotoshop className="iconSkill iconSkillAlt2 iconSkillProject" />
