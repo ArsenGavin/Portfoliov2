@@ -48,14 +48,6 @@ function Projects({ currentLanguage, toggleLightDark }) {
             ? 'Carte de voeux nouvelle an Web App'
             : 'New Years Greeting Card Web App'}
         </p>
-        <a
-          href="https://www.youtube.com/watch?v=WXVT7SfVfpM&ab_channel=ThomasBirmingham"
-          className={
-            toggleLightDark === false ? 'linkVid' : 'linkVid FontBlack'
-          }
-        >
-          Video link 🔗
-        </a>
         <div className="compéBox">
           <FaFigma className="iconSkill iconSkillAlt1 iconSkillProject" />
           <SiAdobephotoshop className="iconSkill iconSkillAlt2 iconSkillProject" />
