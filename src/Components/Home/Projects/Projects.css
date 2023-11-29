@@ -123,4 +123,18 @@
     font-size: 12px;
       margin : -4% 0 0 4%;
   }
+  .project1 {
+    width: 100%;
+    max-width: none;
+  }
+
+  .project2 {
+    width: 70%;
+    max-width: none;
+  }
+
+  .project3 {
+    width: 70%;
+    max-width: none;
+  }
   }
