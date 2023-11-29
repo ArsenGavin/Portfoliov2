@@ -58,6 +58,7 @@
     height: auto;
     margin: 0 auto;
     display: block;
+    max-width: 800px;
   }
 
   .project2 {
