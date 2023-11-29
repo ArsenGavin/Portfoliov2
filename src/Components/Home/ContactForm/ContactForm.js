@@ -72,10 +72,7 @@ function ContactForm({ currentLanguage, colorPoliceCanvas, toggleLightDark }) {
             name="user_name"
           />
           <label className={toggleLightDark === false ? '' : 'FontBlack '}>
-            >
-            {currentLanguage === 'FR'
-              ? 'A quel email dois-je repondre :'
-              : 'Your email :'}
+            {currentLanguage === 'FR' ? 'Votre e-mail :' : 'Your email :'}
           </label>
           <input
             className={`${
@@ -95,7 +92,7 @@ function ContactForm({ currentLanguage, colorPoliceCanvas, toggleLightDark }) {
             name="user_email"
           />
           <label className={toggleLightDark === false ? '' : 'FontBlack '}>
-            >{currentLanguage === 'FR' ? 'Votre message :' : 'Your message :'}
+            {currentLanguage === 'FR' ? 'Votre message :' : 'Your message :'}
           </label>
           <textarea
             className={`${
