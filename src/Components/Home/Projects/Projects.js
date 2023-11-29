@@ -55,7 +55,6 @@ function Projects({ currentLanguage, toggleLightDark }) {
           <FaReact className="iconSkill iconSkillAlt5 iconSkillProject" />
           <FaGithub className="iconSkill iconSkillAlt10 iconSkillProject" />
         </div>
-        -
       </div>
       <div className="cardBox">
         <img className="project3" src={popcote} alt="gif projet" />
